@@ -1,126 +1,90 @@
 export default function Community() {
   return (
     <section
-  className="fade-in"
-  id="community"
+      className="fade-in"
+      id="community"
       style={{
         padding: "90px 20px",
-        backgroundColor: "#F4F6F8",
+        backgroundColor: "#FFFDF9",
         scrollMarginTop: "160px",
       }}
     >
       <div
         style={{
-          maxWidth: "1100px",
+          maxWidth: "1180px",
           margin: "0 auto",
-          textAlign: "center",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          gap: "50px",
+          alignItems: "center",
         }}
       >
-        <p
-          style={{
-            color: "#B68C35",
-            fontFamily: "Arial, sans-serif",
-            textTransform: "uppercase",
-            letterSpacing: "3px",
-            fontSize: "14px",
-            marginBottom: "14px",
-            fontWeight: 700,
-          }}
-        >
-          For Property Owners
-        </p>
-
-        <h2
-          style={{
-            fontSize: "42px",
-            lineHeight: 1.15,
-            marginBottom: "20px",
-            color: "#1E2A3A",
-          }}
-        >
-          Professionally managed shared housing with structure and accountability
-        </h2>
-
-        <p
-          style={{
-            maxWidth: "800px",
-            margin: "0 auto 40px auto",
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#4A4A4A",
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          TrueNorth Haven Living partners with property owners to provide
-          structured shared housing in clean, respectful, and well-managed
-          residential environments.
-        </p>
-
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "24px",
-            textAlign: "left",
-          }}
-        >
-          {[
-            "Structured resident screening and placement review",
-            "Clear house rules and household expectations",
-            "Routine property inspections and oversight",
-            "Clean and organized living environments",
-            "Stable occupancy and consistent rent structure",
-            "Respect for neighbors and surrounding community",
-          ].map((item) => (
-            <div
-              key={item}
-              style={{
-                backgroundColor: "#FFFFFF",
-                borderRadius: "18px",
-                padding: "26px",
-                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
-                fontFamily: "Arial, sans-serif",
-                fontSize: "16px",
-                lineHeight: 1.7,
-                color: "#333",
-              }}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
-
-        <p
-          style={{
-            maxWidth: "820px",
-            margin: "34px auto 0 auto",
-            fontSize: "17px",
-            lineHeight: 1.8,
-            color: "#4A4A4A",
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          We aim to maintain calm, structured homes that protect property
-          condition while supporting residents working toward stability and
-          independence.
-        </p>
-
-        <div style={{ marginTop: "34px" }}>
-          <a
-            href="#contact"
+        <div>
+          <p
             style={{
-              backgroundColor: "#D8B25A",
-              color: "#1E2A3A",
-              padding: "15px 30px",
-              borderRadius: "999px",
-              textDecoration: "none",
-              fontWeight: 700,
+              color: "#B68C35",
               fontFamily: "Arial, sans-serif",
-              display: "inline-block",
+              textTransform: "uppercase",
+              letterSpacing: "3px",
+              fontSize: "14px",
+              marginBottom: "14px",
+              fontWeight: 700,
             }}
           >
-            Partner With Us
-          </a>
+            Living Environment
+          </p>
+
+          <h2
+            style={{
+              fontSize: "clamp(34px, 4vw, 50px)",
+              lineHeight: 1.15,
+              margin: "0 0 22px 0",
+              color: "#1E2A3A",
+            }}
+          >
+            Clean, structured housing designed for stability and daily consistency
+          </h2>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.85,
+              color: "#4A4A4A",
+              marginBottom: "18px",
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            TrueNorth Haven Living provides a well-maintained, organized, and
+            structured shared housing environment where residents can focus on
+            stability, routine, and forward progress.
+          </p>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.85,
+              color: "#4A4A4A",
+              fontFamily: "Arial, sans-serif",
+              margin: 0,
+            }}
+          >
+            Our homes are designed to support accountability, respect, and
+            independence while maintaining a calm and cooperative living
+            atmosphere for all residents.
+          </p>
+        </div>
+
+        <div>
+          <img
+            src="/community-support.jpg"
+            alt="Structured shared living environment"
+            style={{
+              width: "100%",
+              borderRadius: "24px",
+              boxShadow: "0 16px 40px rgba(0,0,0,0.12)",
+              display: "block",
+            }}
+          />
         </div>
       </div>
     </section>
