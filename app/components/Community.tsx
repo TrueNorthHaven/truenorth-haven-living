@@ -1,4 +1,4 @@
-export default function PropertyOwners() {
+export default function Community() {
   return (
     <section
   className="fade-in"
