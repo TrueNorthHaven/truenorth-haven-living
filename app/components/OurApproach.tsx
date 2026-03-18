@@ -6,7 +6,7 @@ export default function OurApproach() {
       style={{
         padding: "90px 20px",
         backgroundColor: "#FFFDF9",
-        scrollMarginTop: "110px",
+        scrollMarginTop: "160px",
       }}
     >
       <div
