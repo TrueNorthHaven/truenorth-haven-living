@@ -1,7 +1,7 @@
 export default function Community() {
   return (
     <section
-  className="fade-in"
+      className="fade-in"
       id="community"
       style={{
         padding: "90px 20px",
@@ -31,7 +31,7 @@ export default function Community() {
               fontWeight: 700,
             }}
           >
-            Welcome Home
+            Living Environment
           </p>
 
           <h2
@@ -42,7 +42,7 @@ export default function Community() {
               color: "#1E2A3A",
             }}
           >
-            Warm, welcoming housing designed for stability and growth
+            Clean, structured housing designed for stability and daily consistency
           </h2>
 
           <p
@@ -54,9 +54,9 @@ export default function Community() {
               fontFamily: "Arial, sans-serif",
             }}
           >
-            TrueNorth Haven Living provides a clean, comfortable, and
-            structured shared housing environment for adults who benefit from
-            stability, routine, and supportive community.
+            TrueNorth Haven Living provides a well-maintained, organized, and
+            structured shared housing environment where residents can focus on
+            stability, routine, and forward progress.
           </p>
 
           <p
@@ -68,16 +68,16 @@ export default function Community() {
               margin: 0,
             }}
           >
-            Our goal is to create a peaceful home atmosphere where residents
-            feel respected, encouraged, and positioned to move forward with
-            confidence.
+            Our homes are designed to support accountability, respect, and
+            independence while maintaining a calm and cooperative living
+            atmosphere for all residents.
           </p>
         </div>
 
         <div>
           <img
             src="/community-support.jpg"
-            alt="Supportive community environment"
+            alt="Structured shared living environment"
             style={{
               width: "100%",
               borderRadius: "24px",
