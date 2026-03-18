@@ -82,6 +82,7 @@ export default function Contact() {
 
           {/* Spam protection */}
           <input type="text" name="_gotcha" style={{ display: "none" }} />
+          <input type="hidden" name="_subject" value="New Placement Inquiry" />
 
           <button
             type="submit"
