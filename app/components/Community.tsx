@@ -1,8 +1,8 @@
 export default function PropertyOwners() {
   return (
     <section
-      className="fade-in"
-      id="property-owners"
+  className="fade-in"
+  id="community"
       style={{
         padding: "90px 20px",
         backgroundColor: "#F4F6F8",
