@@ -6,7 +6,7 @@ export default function PropertyOwners() {
       style={{
         padding: "90px 20px",
         backgroundColor: "#F4F6F8",
-        scrollMarginTop: "110px",
+        scrollMarginTop: "160px",
       }}
     >
       <div
