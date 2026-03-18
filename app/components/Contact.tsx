@@ -4,6 +4,38 @@ import { useState } from "react";
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState("");
+
+  async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
+    e.preventDefault();
+    setSubmitting(true);
+    setError("");
+
+    const form = e.currentTarget;
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch("https://formspree.io/f/mlgpaplg", {
+        method: "POST",
+        body: formData,
+        headers: {
+          Accept: "application/json",
+        },
+      });
+
+      if (response.ok) {
+        setSubmitted(true);
+        form.reset();
+      } else {
+        setError("Something went wrong. Please try again.");
+      }
+    } catch {
+      setError("Something went wrong. Please try again.");
+    } finally {
+      setSubmitting(false);
+    }
+  }
 
   return (
     <section
@@ -55,33 +87,6 @@ export default function Contact() {
           seeking structured shared housing, please complete the form below.
         </p>
 
-        <p
-          style={{
-            fontSize: "15px",
-            lineHeight: 1.8,
-            color: "#D7D1C7",
-            marginBottom: "30px",
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          Placement inquiries are typically reviewed within 24–48 hours.
-          Agency referrals, program-funded placements, and voucher-supported
-          housing are welcome.
-        </p>
-
-        <p
-          style={{
-            fontSize: "14px",
-            lineHeight: 1.8,
-            color: "#CFC7BA",
-            marginBottom: "30px",
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          Non-medical supportive housing • Structured shared living • Adults 18+
-          • Las Vegas & Henderson • Agency referrals welcome
-        </p>
-
         {submitted ? (
           <div
             style={{
@@ -99,9 +104,7 @@ export default function Contact() {
           </div>
         ) : (
           <form
-            action="https://formspree.io/f/mlgpaplg"
-            method="POST"
-            onSubmit={() => setSubmitted(true)}
+            onSubmit={handleSubmit}
             style={{
               display: "flex",
               flexDirection: "column",
@@ -110,29 +113,9 @@ export default function Contact() {
               margin: "0 auto",
             }}
           >
-            <input
-              type="text"
-              name="name"
-              placeholder="Full Name"
-              required
-              style={inputStyle}
-            />
-
-            <input
-              type="email"
-              name="email"
-              placeholder="Email Address"
-              required
-              style={inputStyle}
-            />
-
-            <input
-              type="text"
-              name="phone"
-              placeholder="Phone Number"
-              style={inputStyle}
-            />
-
+            <input type="text" name="name" placeholder="Full Name" required style={inputStyle} />
+            <input type="email" name="email" placeholder="Email Address" required style={inputStyle} />
+            <input type="text" name="phone" placeholder="Phone Number" style={inputStyle} />
             <input
               type="text"
               name="agency"
@@ -166,22 +149,12 @@ export default function Contact() {
               style={inputStyle}
             />
 
-            <input
-              type="text"
-              name="_gotcha"
-              style={{ display: "none" }}
-              tabIndex={-1}
-              autoComplete="off"
-            />
-
-            <input
-              type="hidden"
-              name="_subject"
-              value="New Placement Inquiry"
-            />
+            <input type="text" name="_gotcha" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
+            <input type="hidden" name="_subject" value="New Placement Inquiry" />
 
             <button
               type="submit"
+              disabled={submitting}
               style={{
                 backgroundColor: "#D8B25A",
                 color: "#1E2A3A",
@@ -190,27 +163,19 @@ export default function Contact() {
                 border: "none",
                 fontWeight: 700,
                 fontSize: "16px",
-                cursor: "pointer",
+                cursor: submitting ? "not-allowed" : "pointer",
+                opacity: submitting ? 0.7 : 1,
                 fontFamily: "Arial, sans-serif",
               }}
             >
-              Submit Inquiry
+              {submitting ? "Submitting..." : "Submit Inquiry"}
             </button>
+
+            {error ? (
+              <p style={{ color: "#ffb4b4", fontFamily: "Arial, sans-serif" }}>{error}</p>
+            ) : null}
           </form>
         )}
-
-        <p
-          style={{
-            marginTop: "20px",
-            fontSize: "14px",
-            color: "#D7D1C7",
-            fontFamily: "Arial, sans-serif",
-            lineHeight: 1.8,
-          }}
-        >
-          You may also contact us directly regarding referral partnerships,
-          placement availability, or program-supported housing opportunities.
-        </p>
       </div>
     </section>
   );
