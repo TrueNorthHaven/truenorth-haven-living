@@ -1,7 +1,7 @@
 export default function Expectations() {
   return (
     <section
-  className="fade-in"
+      className="fade-in"
       id="expectations"
       style={{
         padding: "90px 20px",
@@ -38,7 +38,7 @@ export default function Expectations() {
             color: "#1E2A3A",
           }}
         >
-          A structured home environment built on respect and responsibility
+          A Structured Living Environment Built on Accountability and Respect
         </h2>
 
         <p
@@ -52,9 +52,9 @@ export default function Expectations() {
           }}
         >
           TrueNorth Haven Living maintains a calm, organized, and respectful
-          shared housing environment. Residents are expected to contribute to
-          the positive atmosphere of the home while working toward personal
-          stability and independence.
+          shared housing environment. Residents are expected to follow clear
+          household guidelines and contribute to a stable and cooperative
+          living atmosphere.
         </p>
 
         <div
@@ -67,11 +67,11 @@ export default function Expectations() {
         >
           {[
             "Maintain a clean and respectful living environment",
-            "Follow house guidelines and quiet hours",
-            "Respect other residents and shared spaces",
-            "Remain focused on stability, routine, and personal progress",
-            "Communicate respectfully with house management",
-            "Contribute to a peaceful and supportive home atmosphere",
+            "Follow all house guidelines, rules, and quiet hours",
+            "Respect other residents and shared common areas",
+            "Remain focused on stability, routine, and personal responsibility",
+            "Communicate appropriately with house management",
+            "Contribute to a peaceful, structured, and supportive home",
           ].map((item) => (
             <div
               key={item}
