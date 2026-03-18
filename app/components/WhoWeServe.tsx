@@ -1,7 +1,7 @@
 export default function WhoWeServe() {
   return (
     <section
-  className="fade-in"
+      className="fade-in"
       id="serve"
       style={{
         padding: "90px 20px",
@@ -38,7 +38,7 @@ export default function WhoWeServe() {
             color: "#1E2A3A",
           }}
         >
-          Housing designed for adults seeking stability and independence
+          Housing for Adults Seeking Stability, Structure, and Independence
         </h2>
 
         <p
@@ -51,9 +51,9 @@ export default function WhoWeServe() {
             fontFamily: "Arial, sans-serif",
           }}
         >
-          TrueNorth Haven Living provides structured supportive housing for
-          adults seeking a calm, respectful living environment while working
-          toward stability and long-term independence.
+          TrueNorth Haven Living provides structured shared housing for adults
+          who benefit from a calm, respectful environment while working toward
+          stability, accountability, and long-term independence.
         </p>
 
         <div
@@ -65,12 +65,12 @@ export default function WhoWeServe() {
           }}
         >
           {[
-            "Adults transitioning from supportive or reentry programs",
-            "Individuals working with case managers or social service agencies",
-            "Residents seeking stable shared housing while rebuilding independence",
+            "Independent adults with a reliable income source",
+            "Individuals working with case managers or support agencies",
+            "Residents transitioning from re-entry or structured programs",
+            "Veterans seeking stable and supportive housing",
             "Individuals participating in employment or workforce programs",
-            "Residents receiving housing assistance or voucher support",
-            "Adults with a reliable and verified income source",
+            "Adults seeking affordable, structured shared living",
           ].map((item) => (
             <div
               key={item}
@@ -101,8 +101,8 @@ export default function WhoWeServe() {
           }}
         >
           Our housing is best suited for individuals who are able to live
-          independently and do not require continuous supervision or clinical
-          behavioral management.
+          independently and do not require medical care, clinical supervision,
+          or intensive behavioral services.
         </p>
       </div>
     </section>
