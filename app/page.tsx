@@ -10,6 +10,7 @@ import WhoWeServe from "./components/WhoWeServe";
 import PlacementGuidelines from "./components/PlacementGuidelines";
 import Expectations from "./components/Expectations";
 import ReferralPartners from "./components/ReferralPartners";
+import PropertyOwners from "./components/PropertyOwners";
 import PlacementProcess from "./components/PlacementProcess";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
