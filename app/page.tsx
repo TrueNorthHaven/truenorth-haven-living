@@ -1,4 +1,3 @@
-
 import ScrollReveal from "./components/ScrollReveal";
 import Header from "./components/Header";
 import Hero from "./components/Hero";
@@ -18,24 +17,28 @@ import Footer from "./components/Footer";
 export default function Home() {
   return (
     <main
-  style={{
-    backgroundColor: "#F7F2EA",
-    color: "#1E2A3A",
-    fontFamily: "Georgia, serif",
-  }}
->
-  <ScrollReveal />
+      style={{
+        backgroundColor: "#F7F2EA",
+        color: "#1E2A3A",
+        fontFamily: "Georgia, serif",
+      }}
+    >
+      <ScrollReveal />
 
-  <Header />
-  <Hero />
-  <Community />
-  <About />
-  <WhoWeServe />
-  <Expectations />
-  <ReferralPartners />
-  <Contact />
-  <Footer />
-</main>
+      <Header />
+      <Hero />
+      <Community />
+      <Credibility />
+      <About />
+      <HousingEnvironment />
+      <Funding />
+      <WhoWeServe />
+      <PlacementGuidelines />
+      <Expectations />
+      <ReferralPartners />
+      <PlacementProcess />
+      <Contact />
+      <Footer />
+    </main>
   );
 }
-
