@@ -45,48 +45,29 @@ export default function Header() {
             alignItems: "center",
           }}
         >
-          <a
-            href="#about-section"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            About
-          </a>
-          <a
-            href="#serve"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Who We Serve
-          </a>
-          <a
-            href="#expectations"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Expectations
-          </a>
-          <a
-            href="#referral-partners"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Referral Partners
-          </a>
-          <a
-            href="#placement-process"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Placement Inquiry
-          </a>
-          <a
-            href="#contact"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Property Owners
-            </a>
-            <a
-            href="#property-owners"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Contact
-          </a>
+    <a href="#about-section" style={{ color: "white", textDecoration: "none" }}>
+  About
+</a>
+
+<a href="#community" style={{ color: "white", textDecoration: "none" }}>
+  Community
+</a>
+
+<a href="#expectations" style={{ color: "white", textDecoration: "none" }}>
+  Expectations
+</a>
+
+<a href="#referral-partners" style={{ color: "white", textDecoration: "none" }}>
+  Referral Partners
+</a>
+
+<a href="#property-owners" style={{ color: "white", textDecoration: "none" }}>
+  Property Owners
+</a>
+
+<a href="#contact" style={{ color: "white", textDecoration: "none" }}>
+  Contact
+</a>
         </nav>
       </div>
     </header>
