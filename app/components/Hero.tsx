@@ -32,6 +32,7 @@ export default function Hero() {
           color: "#FFFFFF",
         }}
       >
+        {/* Logo */}
         <div
           style={{
             display: "inline-block",
@@ -55,6 +56,7 @@ export default function Hero() {
           />
         </div>
 
+        {/* Top Label */}
         <p
           style={{
             fontSize: "15px",
@@ -69,6 +71,7 @@ export default function Hero() {
           Structured Supportive Living
         </p>
 
+        {/* UPDATED HEADLINE */}
         <h1
           style={{
             fontSize: "clamp(42px, 7vw, 78px)",
@@ -77,20 +80,58 @@ export default function Hero() {
             fontWeight: 700,
           }}
         >
-          TrueNorth Haven Living
+          Structured Shared Housing in Las Vegas & Henderson
         </h1>
 
+        {/* UPDATED SUBTEXT */}
         <p
           style={{
-            fontSize: "clamp(18px, 2.5vw, 28px)",
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            margin: 0,
+            fontSize: "clamp(16px, 2vw, 22px)",
+            marginBottom: "30px",
             fontFamily: "Arial, sans-serif",
+            lineHeight: 1.5,
           }}
         >
-          Guidance. Stability. Home.
+          Safe, stable, and professionally managed housing for independent adults seeking structure, accountability, and a supportive living environment.
         </p>
+
+        {/* BUTTONS */}
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            gap: "14px",
+            flexWrap: "wrap",
+          }}
+        >
+          <a
+            href="#placement-process"
+            style={{
+              backgroundColor: "#D8B25A",
+              color: "#1E2A3A",
+              padding: "14px 26px",
+              borderRadius: "30px",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Submit Placement Inquiry
+          </a>
+
+          <a
+            href="#referral-partners"
+            style={{
+              border: "2px solid #FFFFFF",
+              color: "#FFFFFF",
+              padding: "14px 26px",
+              borderRadius: "30px",
+              fontWeight: 600,
+              textDecoration: "none",
+            }}
+          >
+            Partner With Us
+          </a>
+        </div>
       </div>
     </section>
   );
