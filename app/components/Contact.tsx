@@ -1,7 +1,7 @@
 export default function Contact() {
   return (
     <section
-  className="fade-in"
+      className="fade-in"
       id="contact"
       style={{
         padding: "100px 20px",
@@ -46,7 +46,7 @@ export default function Contact() {
           }}
         >
           For referral partners, case managers, or individuals seeking
-          structured supportive housing, please complete the form below.
+          structured shared housing, please complete the inquiry form below.
         </p>
 
         <p
@@ -54,12 +54,27 @@ export default function Contact() {
             fontSize: "15px",
             lineHeight: 1.8,
             color: "#D7D1C7",
-            marginBottom: "36px",
+            marginBottom: "30px",
             fontFamily: "Arial, sans-serif",
           }}
         >
           Placement inquiries are typically reviewed within 24–48 hours.
-          Agency referrals and program-supported placements are welcome.
+          Agency referrals, program-funded placements, and voucher-supported
+          housing are welcome.
+        </p>
+
+        {/* TRUST LINE */}
+        <p
+          style={{
+            fontSize: "14px",
+            lineHeight: 1.8,
+            color: "#CFC7BA",
+            marginBottom: "30px",
+            fontFamily: "Arial, sans-serif",
+          }}
+        >
+          Non-medical supportive housing • Structured shared living • Adults 18+
+          • Las Vegas & Henderson • Agency referrals welcome
         </p>
 
         <form
@@ -76,7 +91,7 @@ export default function Contact() {
           <input
             type="text"
             name="name"
-            placeholder="Your Name"
+            placeholder="Full Name"
             required
             style={{
               padding: "14px",
@@ -113,7 +128,7 @@ export default function Contact() {
 
           <textarea
             name="message"
-            placeholder="Tell us about the placement or housing inquiry..."
+            placeholder="Provide details about the placement, funding type, or housing need..."
             rows={5}
             required
             style={{
@@ -138,22 +153,21 @@ export default function Contact() {
               cursor: "pointer",
             }}
           >
-            Send Inquiry
+            Submit Inquiry
           </button>
         </form>
 
         <p
           style={{
-            marginTop: "18px",
+            marginTop: "20px",
             fontSize: "14px",
             color: "#D7D1C7",
             fontFamily: "Arial, sans-serif",
             lineHeight: 1.8,
           }}
         >
-          We welcome placement inquiries from case managers, agencies, and
-          program coordinators. You may also contact us directly regarding
-          referral questions or program-supported placements.
+          You may also contact us directly regarding referral partnerships,
+          placement availability, or program-supported housing opportunities.
         </p>
       </div>
     </section>
