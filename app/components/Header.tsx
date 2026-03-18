@@ -82,11 +82,9 @@ export default function Header() {
             Property Owners
             </a>
             <a
-  href="#property-owners"
-  style={{ color: "white", textDecoration: "none" }}
->
-  Property Owners
-</a>
+            href="#property-owners"
+            style={{ color: "white", textDecoration: "none" }}
+          >
             Contact
           </a>
         </nav>
