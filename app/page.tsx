@@ -4,6 +4,7 @@ import Hero from "./components/Hero";
 import Community from "./components/Community";
 import Credibility from "./components/Credibility";
 import About from "./components/About";
+import OurApproach from "./components/OurApproach";
 import HousingEnvironment from "./components/HousingEnvironment";
 import Funding from "./components/Funding";
 import WhoWeServe from "./components/WhoWeServe";
@@ -30,6 +31,9 @@ export default function Home() {
       <Community />
       <Credibility />
       <About />
+      <About />
+      <OurApproach />
+      <HousingEnvironment />
       <HousingEnvironment />
       <Funding />
       <WhoWeServe />
