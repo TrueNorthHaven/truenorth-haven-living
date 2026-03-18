@@ -35,66 +35,45 @@ export default function Header() {
         </div>
 
         <nav
-          style={{
-            display: "flex",
-            gap: "22px",
-            fontFamily: "Arial, sans-serif",
-            fontSize: "15px",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "center",
-          }}
-        >
-          <a
-            href="#about-section"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            About
-          </a>
+  style={{
+    display: "flex",
+    gap: "22px",
+    fontFamily: "Arial, sans-serif",
+    fontSize: "15px",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignItems: "center",
+  }}
+>
+  <a href="#about-section" style={{ color: "white", textDecoration: "none" }}>
+    About
+  </a>
 
-          <a
-            href="#community"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Community
-          </a>
+  <a href="#community" style={{ color: "white", textDecoration: "none" }}>
+    Living Environment
+  </a>
 
-          <a
-            href="#expectations"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Expectations
-          </a>
+  <a href="#our-approach" style={{ color: "white", textDecoration: "none" }}>
+    Our Approach
+  </a>
 
-          <a
-            href="#referral-partners"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Referral Partners
-          </a>
+  <a href="#expectations" style={{ color: "white", textDecoration: "none" }}>
+    Expectations
+  </a>
 
-          <a
-            href="#property-owners"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Property Owners
-          </a>
+  <a href="#referral-partners" style={{ color: "white", textDecoration: "none" }}>
+    Referral Partners
+  </a>
 
-          <a
-            href="#placement-process"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Placement Inquiry
-          </a>
+  <a href="#property-owners" style={{ color: "white", textDecoration: "none" }}>
+    Property Owners
+  </a>
 
-          <a
-            href="#contact"
-            style={{ color: "white", textDecoration: "none" }}
-          >
-            Contact
-          </a>
-        </nav>
-      </div>
-    </header>
-  );
-}
+  <a href="#placement-process" style={{ color: "white", textDecoration: "none" }}>
+    Placement Inquiry
+  </a>
+
+  <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
+    Contact
+  </a>
+</nav>
