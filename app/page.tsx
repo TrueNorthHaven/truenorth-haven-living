@@ -31,9 +31,7 @@ export default function Home() {
       <Community />
       <Credibility />
       <About />
-      <About />
       <OurApproach />
-      <HousingEnvironment />
       <HousingEnvironment />
       <Funding />
       <WhoWeServe />
