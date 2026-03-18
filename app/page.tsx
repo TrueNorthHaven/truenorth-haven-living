@@ -25,7 +25,6 @@ export default function Home() {
       }}
     >
       <ScrollReveal />
-
       <Header />
       <Hero />
       <Community />
