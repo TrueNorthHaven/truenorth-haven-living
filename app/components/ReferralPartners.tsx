@@ -1,12 +1,13 @@
 export default function ReferralPartners() {
   return (
-    <section
-      style={{
-        padding: "80px 20px",
-        backgroundColor: "#F4F6F8",
-        textAlign: "center",
-      }}
-    >
+  <section
+  id="referral-partners"
+  style={{
+    padding: "80px 20px",
+    backgroundColor: "#F4F6F8",
+    textAlign: "center",
+  }}
+>
       <div style={{ maxWidth: "950px", margin: "0 auto" }}>
         <p
           style={{
