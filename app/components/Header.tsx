@@ -5,93 +5,55 @@ export default function Header() {
         position: "sticky",
         top: 0,
         zIndex: 1000,
-        backgroundColor: "rgba(47, 64, 84, 0.96)",
-        backdropFilter: "blur(6px)",
-        borderBottom: "1px solid rgba(230,230,230,0.25)",
+        backgroundColor: "#2F4054",
+        borderBottom: "1px solid rgba(255,255,255,0.1)",
       }}
     >
       <div
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "20px 28px",
+          padding: "18px 32px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
-          color: "white",
-          flexWrap: "wrap",
-          rowGap: "12px",
         }}
       >
-        <a
-          href="/"
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: "12px",
-            color: "white",
-            textDecoration: "none",
-            whiteSpace: "nowrap",
-          }}
-        >
-         <img
-  src="/logo.jpg"
-  alt="TrueNorth Haven Living logo"
-  style={{
-    width: "140px",
-    height: "140px",
-    objectFit: "contain",
-  }}
-/>
-
-          <span
+        {/* LOGO ONLY (NO EXTRA TEXT) */}
+        <a href="/" style={{ display: "flex", alignItems: "center" }}>
+          <img
+            src="/logo.jpg"
+            alt="TrueNorth Haven Living"
             style={{
-              fontSize: "22px",
-              fontWeight: 700,
-              letterSpacing: "0.3px",
+              height: "60px",
+              width: "auto",
+              objectFit: "contain",
             }}
-          >
-            TrueNorth Haven Living
-          </span>
+          />
         </a>
 
+        {/* NAV */}
         <nav
           style={{
             display: "flex",
-            gap: "22px",
+            gap: "26px",
+            alignItems: "center",
             fontFamily: "Arial, sans-serif",
             fontSize: "15px",
-            flexWrap: "wrap",
-            justifyContent: "center",
-            alignItems: "center",
           }}
         >
-          <a href="/" style={{ color: "white", textDecoration: "none" }}>
-            Home
-          </a>
-
-          <a href="/about" style={{ color: "white", textDecoration: "none" }}>
-            About
-          </a>
-
-          <a href="/housing" style={{ color: "white", textDecoration: "none" }}>
-            Housing
-          </a>
-
-          <a href="/referrals" style={{ color: "white", textDecoration: "none" }}>
-            Referral Partners
-          </a>
-
-          <a href="/property-owners" style={{ color: "white", textDecoration: "none" }}>
-            Property Owners
-          </a>
+          <a href="/" style={linkStyle}>Home</a>
+          <a href="/about" style={linkStyle}>About</a>
+          <a href="/housing" style={linkStyle}>Housing</a>
+          <a href="/referrals" style={linkStyle}>Referral Partners</a>
+          <a href="/property-owners" style={linkStyle}>Property Owners</a>
 
           <a
             href="/apply"
             style={{
               backgroundColor: "#D6C28A",
               color: "#1E2A3A",
-              padding: "8px 16px",
+              padding: "10px 18px",
               borderRadius: "6px",
               fontWeight: "600",
               textDecoration: "none",
@@ -100,11 +62,14 @@ export default function Header() {
             Apply
           </a>
 
-          <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
-            Contact
-          </a>
+          <a href="/contact" style={linkStyle}>Contact</a>
         </nav>
       </div>
     </header>
   );
 }
+
+const linkStyle = {
+  color: "white",
+  textDecoration: "none",
+};
