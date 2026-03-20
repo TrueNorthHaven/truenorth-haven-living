@@ -45,20 +45,16 @@ export default function Header() {
             alignItems: "center",
           }}
         >
+          <a href="/" style={{ color: "white", textDecoration: "none" }}>
+            Home
+          </a>
+
           <a href="/about" style={{ color: "white", textDecoration: "none" }}>
             About
           </a>
 
           <a href="/housing" style={{ color: "white", textDecoration: "none" }}>
-            Living Environment
-          </a>
-
-          <a href="#our-approach" style={{ color: "white", textDecoration: "none" }}>
-            Our Approach
-          </a>
-
-          <a href="#expectations" style={{ color: "white", textDecoration: "none" }}>
-            Expectations
+            Housing
           </a>
 
           <a href="/referrals" style={{ color: "white", textDecoration: "none" }}>
@@ -67,10 +63,6 @@ export default function Header() {
 
           <a href="/property-owners" style={{ color: "white", textDecoration: "none" }}>
             Property Owners
-          </a>
-
-          <a href="#placement-process" style={{ color: "white", textDecoration: "none" }}>
-            Placement Inquiry
           </a>
 
           <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
