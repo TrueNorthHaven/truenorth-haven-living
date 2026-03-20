@@ -32,49 +32,44 @@ export default function Hero() {
           </p>
 
           <h1
-            style={{
-              fontSize: "clamp(42px, 7vw, 78px)",
-              lineHeight: 1.06,
-              margin: "0 0 18px 0",
-              fontWeight: 700,
-              color: "#1E2A3A",
-            }}
-          >
-            Structured Shared Housing in Las Vegas & Henderson
-          </h1>
+  style={{
+    fontSize: "clamp(42px, 7vw, 78px)",
+    lineHeight: 1.06,
+    margin: "0 0 18px 0",
+    fontWeight: 700,
+  }}
+>
+  Safe, Structured Shared Housing in Clark County
+</h1>
 
          <p
   style={{
     fontSize: "18px",
     lineHeight: 1.7,
-    maxWidth: "700px",
-    margin: "0 0 24px 0",
-    color: "#1E2A3A",
+    maxWidth: "600px",
+    margin: "0 auto",
     fontFamily: "Arial, sans-serif",
   }}
 >
-  Structured shared housing for adults who can live independently and benefit from a stable, respectful home environment.
+  Providing stable, non-medical housing for adults in Las Vegas, Henderson, and surrounding areas.
 </p>
 
-          <a
-            href="/apply"
-            style={{
-              display: "inline-block",
-              marginTop: "8px",
-              padding: "14px 28px",
-              backgroundColor: "#2F4054",
-              color: "white",
-              textDecoration: "none",
-              fontSize: "16px",
-              borderRadius: "6px",
-              fontWeight: 600,
-              fontFamily: "Arial, sans-serif",
-            }}
-          >
-            Apply for Housing
-          </a>
-        </div>
-
+          <div style={{ marginTop: "24px" }}>
+  <a
+    href="/apply"
+    style={{
+      display: "inline-block",
+      padding: "14px 26px",
+      backgroundColor: "#D6C28A",
+      color: "#1E2A3A",
+      borderRadius: "6px",
+      textDecoration: "none",
+      fontWeight: "600",
+    }}
+  >
+    Apply for Housing
+  </a>
+</div>
         <div
           style={{
             minHeight: "420px",
