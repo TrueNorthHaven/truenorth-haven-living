@@ -93,9 +93,9 @@ export default function Footer() {
               color: "#D7DDE3",
             }}
           >
-            (702) 401-5416
+            (702) 714-0340
             <br />
-            Jhataragarner82@gmail.com
+            info@truenorthhavenliving.com
             <br />
             Response time: 24–48 hours
           </p>
