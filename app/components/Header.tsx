@@ -61,7 +61,7 @@ export default function Header() {
             Expectations
           </a>
 
-          <a href="#referral-partners" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/referrals" style={{ color: "white", textDecoration: "none" }}>
             Referral Partners
           </a>
 
