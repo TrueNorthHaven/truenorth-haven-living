@@ -28,19 +28,29 @@ export default function PropertyOwnersPage() {
           please submit your information below.
         </p>
 
-        <form style={{ display: "grid", gap: "16px" }}>
-          <input type="text" placeholder="Full Name" style={inputStyle} />
-          <input type="text" placeholder="Company Name (Optional)" style={inputStyle} />
-          <input type="email" placeholder="Email Address" style={inputStyle} />
-          <input type="tel" placeholder="Phone Number" style={inputStyle} />
-          <input type="text" placeholder="Property Address" style={inputStyle} />
-          <input type="text" placeholder="Number of Bedrooms" style={inputStyle} />
-          <input type="text" placeholder="Monthly Rent Requested" style={inputStyle} />
-          <textarea placeholder="Additional Property Details" rows={6} style={inputStyle} />
-          <button type="submit" style={buttonStyle}>
-            Submit Property Inquiry
-          </button>
-        </form>
+        <form action="https://formspree.io/f/xreydywb" method="POST" style={{ display: "grid", gap: "16px" }}>
+  <input type="hidden" name="formType" value="Property Owner Inquiry" />
+
+  <input name="fullName" type="text" placeholder="Full Name" style={inputStyle} />
+  <input name="company" type="text" placeholder="Company Name (Optional)" style={inputStyle} />
+  <input name="email" type="email" placeholder="Email Address" style={inputStyle} />
+  <input name="phone" type="tel" placeholder="Phone Number" style={inputStyle} />
+
+  <input name="propertyAddress" type="text" placeholder="Property Address" style={inputStyle} />
+  <input name="bedrooms" type="text" placeholder="Number of Bedrooms" style={inputStyle} />
+  <input name="rent" type="text" placeholder="Monthly Rent Requested" style={inputStyle} />
+
+  <textarea
+    name="details"
+    placeholder="Additional Property Details"
+    rows={6}
+    style={inputStyle}
+  />
+
+  <button type="submit" style={buttonStyle}>
+    Submit Property Inquiry
+  </button>
+</form>
       </section>
 
       <Footer />
