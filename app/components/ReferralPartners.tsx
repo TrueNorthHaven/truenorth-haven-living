@@ -1,95 +1,69 @@
-export default function ReferralPartners() {
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+export default function ReferralsPage() {
   return (
-  <section
-  id="referral-partners"
-  style={{
-    padding: "80px 20px",
-    backgroundColor: "#F4F6F8",
-    textAlign: "center",
-  }}
->
-      <div style={{ maxWidth: "950px", margin: "0 auto" }}>
-        <p
-          style={{
-            color: "#C9A449",
-            letterSpacing: "3px",
-            fontWeight: 600,
-            marginBottom: "12px",
-            fontFamily: "Arial, sans-serif",
-            textTransform: "uppercase",
-            fontSize: "14px",
-          }}
-        >
-          Referral Partners Welcome
-        </p>
+    <main
+      style={{
+        backgroundColor: "#F7F2EA",
+        color: "#1E2A3A",
+        fontFamily: "Georgia, serif",
+      }}
+    >
+      <Header />
 
-        <h2
-          style={{
-            fontSize: "38px",
-            color: "#1E2F45",
-            marginBottom: "20px",
-          }}
-        >
-          We Work With Agencies, Case Managers, and Placement Programs
-        </h2>
+      <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "18px" }}>
+          Referral Partner Inquiry
+        </h1>
 
         <p
           style={{
-            fontSize: "18px",
-            color: "#333",
-            lineHeight: 1.8,
+            textAlign: "center",
+            marginBottom: "32px",
+            lineHeight: 1.7,
             fontFamily: "Arial, sans-serif",
-            maxWidth: "800px",
-            margin: "0 auto 30px auto",
           }}
         >
-          TrueNorth Haven Living partners with case managers, social service
-          agencies, and program coordinators seeking stable, structured housing
-          options for clients working toward independence.
+          Use this form to submit a referral inquiry for placement consideration.
         </p>
 
-        {/* BULLETS */}
-        <div
-          style={{
-            maxWidth: "700px",
-            margin: "0 auto",
-            textAlign: "left",
-          }}
-        >
-          <ul
-            style={{
-              fontSize: "17px",
-              lineHeight: 1.8,
-              color: "#333",
-              fontFamily: "Arial, sans-serif",
-              paddingLeft: "20px",
-            }}
-          >
-            <li>Structured shared housing environments</li>
-            <li>Clear house rules and expectations</li>
-            <li>Reliable communication and coordination</li>
-            <li>Consistent placement availability</li>
-          </ul>
-        </div>
+        <form style={{ display: "grid", gap: "16px" }}>
+          <input type="text" placeholder="Referral Partner Name" style={inputStyle} />
+          <input type="text" placeholder="Agency / Organization" style={inputStyle} />
+          <input type="email" placeholder="Email Address" style={inputStyle} />
+          <input type="tel" placeholder="Phone Number" style={inputStyle} />
+          <input type="text" placeholder="Client First Name or Initials" style={inputStyle} />
+          <input type="text" placeholder="Funding Source" style={inputStyle} />
+          <input type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
+          <textarea placeholder="Referral Details / Notes" rows={6} style={inputStyle} />
+          <button type="submit" style={buttonStyle}>
+            Submit Referral
+          </button>
+        </form>
+      </section>
 
-        {/* CTA BUTTON */}
-        <div style={{ marginTop: "35px" }}>
-          <a
-            href="#contact"
-            style={{
-              backgroundColor: "#C9A449",
-              color: "#1E2F45",
-              padding: "14px 28px",
-              borderRadius: "30px",
-              fontWeight: 600,
-              textDecoration: "none",
-              display: "inline-block",
-            }}
-          >
-            Submit a Referral Inquiry
-          </a>
-        </div>
-      </div>
-    </section>
+      <Footer />
+    </main>
   );
 }
+
+const inputStyle = {
+  width: "100%",
+  padding: "14px",
+  borderRadius: "6px",
+  border: "1px solid #ccc",
+  fontSize: "16px",
+  fontFamily: "Arial, sans-serif",
+};
+
+const buttonStyle = {
+  padding: "14px 24px",
+  backgroundColor: "#2F4054",
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "16px",
+  fontWeight: 600,
+  cursor: "pointer",
+};
