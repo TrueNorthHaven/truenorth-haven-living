@@ -2,146 +2,91 @@ export default function Hero() {
   return (
     <section
       style={{
-        position: "relative",
-        minHeight: "100vh",
-        backgroundImage: "url('/home-interior.jpg')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        padding: "40px 20px",
+        padding: "90px 24px 80px",
+        background: "linear-gradient(to bottom, #F7F2EA 0%, #F3ECE2 100%)",
       }}
     >
       <div
         style={{
-          position: "absolute",
-          inset: 0,
-          background:
-            "linear-gradient(rgba(20, 28, 40, 0.58), rgba(20, 28, 40, 0.58))",
-        }}
-      />
-
-      <div
-        style={{
-          position: "relative",
-          zIndex: 1,
-          maxWidth: "900px",
-          width: "100%",
-          textAlign: "center",
-          color: "#FFFFFF",
+          maxWidth: "1200px",
+          margin: "0 auto",
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
+          gap: "40px",
+          alignItems: "center",
         }}
       >
-        {/* Logo */}
+        <div>
+          <p
+            style={{
+              fontSize: "15px",
+              letterSpacing: "4px",
+              textTransform: "uppercase",
+              color: "#8D8B5A",
+              margin: "0 0 12px 0",
+              fontFamily: "Arial, sans-serif",
+              fontWeight: 600,
+            }}
+          >
+            Structured Supportive Living
+          </p>
+
+          <h1
+            style={{
+              fontSize: "clamp(42px, 7vw, 78px)",
+              lineHeight: 1.06,
+              margin: "0 0 18px 0",
+              fontWeight: 700,
+              color: "#1E2A3A",
+            }}
+          >
+            Structured Shared Housing in Las Vegas & Henderson
+          </h1>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.7,
+              maxWidth: "700px",
+              margin: "0 0 24px 0",
+              color: "#1E2A3A",
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            Safe, structured housing designed to support stability,
+            accountability, and long-term success for adults seeking a better
+            path forward.
+          </p>
+
+          <a
+            href="/apply"
+            style={{
+              display: "inline-block",
+              marginTop: "8px",
+              padding: "14px 28px",
+              backgroundColor: "#2F4054",
+              color: "white",
+              textDecoration: "none",
+              fontSize: "16px",
+              borderRadius: "6px",
+              fontWeight: 600,
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            Apply for Housing
+          </a>
+        </div>
+
         <div
           style={{
-            display: "inline-block",
-            backgroundColor: "rgba(255,255,255,0.12)",
-            backdropFilter: "blur(4px)",
-            padding: "18px 18px 14px 18px",
-            borderRadius: "20px",
-            marginBottom: "34px",
-            boxShadow: "0 12px 35px rgba(0,0,0,0.20)",
+            minHeight: "420px",
+            borderRadius: "18px",
+            backgroundImage: "url('/hero-community.jpg')",
+            backgroundSize: "cover",
+            backgroundPosition: "center",
+            boxShadow: "0 18px 40px rgba(0,0,0,0.12)",
           }}
-        >
-          <img
-            src="/logo.jpg"
-            alt="TrueNorth Haven Living Logo"
-            style={{
-              width: "180px",
-              maxWidth: "75vw",
-              display: "block",
-              borderRadius: "12px",
-            }}
-          />
-        </div>
-
-        {/* Top Label */}
-        <p
-          style={{
-            fontSize: "15px",
-            letterSpacing: "4px",
-            textTransform: "uppercase",
-            color: "#D8B25A",
-            margin: "0 0 12px 0",
-            fontFamily: "Arial, sans-serif",
-            fontWeight: 600,
-          }}
-        >
-          Structured Supportive Living
-        </p>
-
-        {/* UPDATED HEADLINE */}
-<h1
-  style={{
-    fontSize: "clamp(42px, 7vw, 78px)",
-    lineHeight: 1.06,
-    margin: "0 0 18px 0",
-    fontWeight: 700,
-  }}
->
-  Structured Shared Housing in Las Vegas & Henderson
-</h1>
-
-{/* UPDATED SUBTEXT */}
-<p
-  style={{
-    fontSize: "18px",
-    lineHeight: 1.7,
-    maxWidth: "700px",
-    margin: "0 auto",
-    color: "#1E2A3A",
-    fontFamily: "Arial, sans-serif",
-  }}
->
-  Safe, structured housing designed to support stability, accountability, and
-  long-term success for adults seeking a better path forward.
-</p>
-
-<a
-  href="/apply"
-  style={{
-    display: "inline-block",
-    marginTop: "24px",
-    padding: "14px 28px",
-    backgroundColor: "#2F4054",
-    color: "white",
-    textDecoration: "none",
-    fontSize: "16px",
-    borderRadius: "6px",
-    fontWeight: "600",
-  }}
->
-  Apply for Housing
-</a>
-          <a
-            href="#placement-process"
-            style={{
-              backgroundColor: "#D8B25A",
-              color: "#1E2A3A",
-              padding: "14px 26px",
-              borderRadius: "30px",
-              fontWeight: 600,
-              textDecoration: "none",
-            }}
-          >
-            Submit Placement Inquiry
-          </a>
-
-          <a
-            href="#referral-partners"
-            style={{
-              border: "2px solid #FFFFFF",
-              color: "#FFFFFF",
-              padding: "14px 26px",
-              borderRadius: "30px",
-              fontWeight: 600,
-              textDecoration: "none",
-            }}
-          >
-            Partner With Us
-          </a>
-        </div>
+        />
       </div>
     </section>
   );
