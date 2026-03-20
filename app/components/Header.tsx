@@ -73,7 +73,7 @@ export default function Header() {
             Placement Inquiry
           </a>
 
-          <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
             Contact
           </a>
         </nav>
