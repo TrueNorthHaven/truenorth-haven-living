@@ -34,7 +34,7 @@ export default function ReferralPartners() {
             margin: "0 auto 20px",
           }}
         >
-          We welcome referrals from case managers, agencies, social service
+          We welcome referrals from case managers, agencies, and social services
           professionals, and community partners seeking structured,
           non-medical shared housing options for appropriate clients.
         </p>
@@ -63,7 +63,7 @@ export default function ReferralPartners() {
           }}
         >
           Use the referral inquiry form below to share placement details and a
-          member of our team will follow up regarding next steps.
+          member of our team will follow up regarding the next steps.
         </p>
       </div>
     </section>
