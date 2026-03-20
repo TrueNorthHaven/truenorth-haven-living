@@ -63,8 +63,8 @@ export default function PropertyOwners() {
           }}
         >
           If you have a property in Clark County and would like to explore a
-          potential partnership, use the property owner inquiry form to share
-          your information and a member of our team will follow up.
+          Potential partnership, use the property owner inquiry form to share
+          Your information and a member of our team will follow up.
         </p>
       </div>
     </section>
