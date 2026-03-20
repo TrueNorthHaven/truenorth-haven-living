@@ -26,7 +26,7 @@ export default function Footer() {
             fontFamily: "Arial, sans-serif",
           }}
         >
-          STRUCTURED SUPPORTIVE LIVING
+          STRUCTURED SHARED HOUSING
         </p>
 
         <p
@@ -49,7 +49,7 @@ export default function Footer() {
             marginBottom: "16px",
           }}
         >
-          Structured supportive housing serving the Las Vegas and Henderson
+          Structured shared housing serving the Las Vegas and Henderson
           area. Agency referrals and placement inquiries welcome.
         </p>
 
@@ -57,7 +57,7 @@ export default function Footer() {
 
   <h3>...</h3>
 
-  <p>STRUCTURED SUPPORTIVE LIVING</p>
+  <p>STRUCTURED SHARED HOUSING</p>
 
   <p>Some other footer text</p>
 
