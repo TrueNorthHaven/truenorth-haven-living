@@ -23,66 +23,88 @@ export default function Header() {
           rowGap: "12px",
         }}
       >
-        <div
+        <a
+          href="/"
           style={{
-            fontSize: "18px",
-            fontWeight: 700,
-            letterSpacing: "0.3px",
+            display: "flex",
+            alignItems: "center",
+            gap: "12px",
+            color: "white",
+            textDecoration: "none",
             whiteSpace: "nowrap",
           }}
         >
-          TrueNorth Haven Living
-        </div>
+          <img
+            src="/logo.jpg"
+            alt="TrueNorth Haven Living logo"
+            style={{
+              width: "42px",
+              height: "42px",
+              objectFit: "cover",
+              borderRadius: "50%",
+            }}
+          />
+
+          <span
+            style={{
+              fontSize: "18px",
+              fontWeight: 700,
+              letterSpacing: "0.3px",
+            }}
+          >
+            TrueNorth Haven Living
+          </span>
+        </a>
 
         <nav
-  style={{
-    display: "flex",
-    gap: "22px",
-    fontFamily: "Arial, sans-serif",
-    fontSize: "15px",
-    flexWrap: "wrap",
-    justifyContent: "center",
-    alignItems: "center",
-  }}
->
-  <a href="/" style={{ color: "white", textDecoration: "none" }}>
-    Home
-  </a>
+          style={{
+            display: "flex",
+            gap: "22px",
+            fontFamily: "Arial, sans-serif",
+            fontSize: "15px",
+            flexWrap: "wrap",
+            justifyContent: "center",
+            alignItems: "center",
+          }}
+        >
+          <a href="/" style={{ color: "white", textDecoration: "none" }}>
+            Home
+          </a>
 
-  <a href="/about" style={{ color: "white", textDecoration: "none" }}>
-    About
-  </a>
+          <a href="/about" style={{ color: "white", textDecoration: "none" }}>
+            About
+          </a>
 
-  <a href="/housing" style={{ color: "white", textDecoration: "none" }}>
-    Housing
-  </a>
+          <a href="/housing" style={{ color: "white", textDecoration: "none" }}>
+            Housing
+          </a>
 
-  <a href="/referrals" style={{ color: "white", textDecoration: "none" }}>
-    Referral Partners
-  </a>
+          <a href="/referrals" style={{ color: "white", textDecoration: "none" }}>
+            Referral Partners
+          </a>
 
-  <a href="/property-owners" style={{ color: "white", textDecoration: "none" }}>
-    Property Owners
-  </a>
+          <a href="/property-owners" style={{ color: "white", textDecoration: "none" }}>
+            Property Owners
+          </a>
 
-  <a
-  href="/apply"
-  style={{
-    backgroundColor: "#D6C28A",
-    color: "#1E2A3A",
-    padding: "8px 16px",
-    borderRadius: "6px",
-    fontWeight: "600",
-    textDecoration: "none",
-  }}
->
-  Apply
-</a>
-          
-  <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
-    Contact
-  </a>
-</nav>
+          <a
+            href="/apply"
+            style={{
+              backgroundColor: "#D6C28A",
+              color: "#1E2A3A",
+              padding: "8px 16px",
+              borderRadius: "6px",
+              fontWeight: "600",
+              textDecoration: "none",
+            }}
+          >
+            Apply
+          </a>
+
+          <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
+            Contact
+          </a>
+        </nav>
       </div>
     </header>
   );
