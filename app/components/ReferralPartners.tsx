@@ -1,76 +1,58 @@
-export default function ReferralsPage() {
+export default function ReferralPartners() {
   return (
-    <main
+    <section
       style={{
+        padding: "80px 24px",
         backgroundColor: "#F7F2EA",
-        color: "#1E2A3A",
-        fontFamily: "Georgia, serif",
       }}
     >
-      <Header />
-
-      <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "18px" }}>
-          Referral Partner Inquiry
-        </h1>
+      <div
+        style={{
+          maxWidth: "900px",
+          margin: "0 auto",
+          textAlign: "center",
+        }}
+      >
+        <h2
+          style={{
+            fontSize: "36px",
+            marginBottom: "18px",
+            color: "#1E2A3A",
+            fontWeight: 700,
+          }}
+        >
+          Referral Partners
+        </h2>
 
         <p
           style={{
-            textAlign: "center",
-            marginBottom: "32px",
-            lineHeight: 1.7,
+            fontSize: "18px",
+            lineHeight: 1.8,
+            color: "#1E2A3A",
             fontFamily: "Arial, sans-serif",
+            maxWidth: "720px",
+            margin: "0 auto 20px",
           }}
         >
-          Use this form to submit a referral inquiry for placement consideration.
+          We welcome referrals from case managers, agencies, social service
+          professionals, and community partners seeking structured,
+          non-medical shared housing options for appropriate clients.
         </p>
 
-        <form action="https://formspree.io/f/xkoqeqad" method="POST" style={{ display: "grid", gap: "16px" }}>
-  <input type="hidden" name="formType" value="Referral Partner Inquiry" />
-
-  <input name="partnerName" type="text" placeholder="Referral Partner Name" style={inputStyle} />
-  <input name="agency" type="text" placeholder="Agency / Organization" style={inputStyle} />
-  <input name="email" type="email" placeholder="Email Address" style={inputStyle} />
-  <input name="phone" type="tel" placeholder="Phone Number" style={inputStyle} />
-
-  <input name="clientName" type="text" placeholder="Client First Name or Initials" style={inputStyle} />
-  <input name="funding" type="text" placeholder="Funding Source" style={inputStyle} />
-  <input name="moveIn" type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
-
-  <textarea
-    name="details"
-    placeholder="Placement Details / Notes"
-    rows={6}
-    style={inputStyle}
-  />
-
-  <button type="submit" style={buttonStyle}>
-    Submit Referral
-  </button>
-</form>
-      </section>
-
-      <Footer />
-    </main>
+        <p
+          style={{
+            fontSize: "18px",
+            lineHeight: 1.8,
+            color: "#1E2A3A",
+            fontFamily: "Arial, sans-serif",
+            maxWidth: "720px",
+            margin: "0 auto",
+          }}
+        >
+          Use the referral inquiry form below to share placement details and a
+          member of our team will follow up regarding next steps.
+        </p>
+      </div>
+    </section>
   );
 }
-
-const inputStyle = {
-  width: "100%",
-  padding: "14px",
-  borderRadius: "6px",
-  border: "1px solid #ccc",
-  fontSize: "16px",
-  fontFamily: "Arial, sans-serif",
-};
-
-const buttonStyle = {
-  padding: "14px 24px",
-  backgroundColor: "#2F4054",
-  color: "white",
-  border: "none",
-  borderRadius: "6px",
-  fontSize: "16px",
-  fontWeight: 600,
-  cursor: "pointer",
-};
