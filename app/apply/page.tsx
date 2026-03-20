@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import Contact from "../components/Contact";
 import Footer from "../components/Footer";
 
 export default function ApplyPage() {
@@ -12,27 +11,61 @@ export default function ApplyPage() {
       }}
     >
       <Header />
-      <section
-        style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          padding: "80px 24px 40px",
-          textAlign: "center",
-        }}
-      >
-        <h1 style={{ fontSize: "42px", marginBottom: "18px" }}>Apply for Placement</h1>
-        <p style={{ fontSize: "18px", lineHeight: 1.7, maxWidth: "700px", margin: "0 auto 22px" }}>
-          Start the placement process by submitting your information below. TrueNorth Haven Living
-          works with individuals, families, and referral partners seeking safe, structured housing
-          options in Las Vegas.
+
+      <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "18px" }}>
+          Apply for Housing
+        </h1>
+
+        <p
+          style={{
+            textAlign: "center",
+            marginBottom: "32px",
+            lineHeight: 1.7,
+            fontFamily: "Arial, sans-serif",
+          }}
+        >
+          Complete the form below to begin the placement inquiry process.
         </p>
-        <p style={{ fontSize: "16px", lineHeight: 1.7 }}>
-          Include your name, contact information, current situation, and any referral details so we
-          can review your inquiry and follow up promptly.
-        </p>
+
+        <form style={{ display: "grid", gap: "16px" }}>
+          <input type="text" placeholder="Full Name" style={inputStyle} />
+          <input type="email" placeholder="Email Address" style={inputStyle} />
+          <input type="tel" placeholder="Phone Number" style={inputStyle} />
+          <input type="text" placeholder="Current Income Source" style={inputStyle} />
+          <input type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
+          <textarea
+            placeholder="Tell us a little about your current situation"
+            rows={6}
+            style={inputStyle}
+          />
+          <button type="submit" style={buttonStyle}>
+            Submit Application
+          </button>
+        </form>
       </section>
-      <Contact />
+
       <Footer />
     </main>
   );
 }
+
+const inputStyle = {
+  width: "100%",
+  padding: "14px",
+  borderRadius: "6px",
+  border: "1px solid #ccc",
+  fontSize: "16px",
+  fontFamily: "Arial, sans-serif",
+};
+
+const buttonStyle = {
+  padding: "14px 24px",
+  backgroundColor: "#2F4054",
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "16px",
+  fontWeight: 600,
+  cursor: "pointer",
+};
