@@ -27,19 +27,29 @@ export default function ReferralsPage() {
           Use this form to submit a referral inquiry for placement consideration.
         </p>
 
-        <form style={{ display: "grid", gap: "16px" }}>
-          <input type="text" placeholder="Referral Partner Name" style={inputStyle} />
-          <input type="text" placeholder="Agency / Organization" style={inputStyle} />
-          <input type="email" placeholder="Email Address" style={inputStyle} />
-          <input type="tel" placeholder="Phone Number" style={inputStyle} />
-          <input type="text" placeholder="Client First Name or Initials" style={inputStyle} />
-          <input type="text" placeholder="Funding Source" style={inputStyle} />
-          <input type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
-          <textarea placeholder="Referral Details / Notes" rows={6} style={inputStyle} />
-          <button type="submit" style={buttonStyle}>
-            Submit Referral
-          </button>
-        </form>
+        <form action="https://formspree.io/f/xkoqeqad" method="POST" style={{ display: "grid", gap: "16px" }}>
+  <input type="hidden" name="formType" value="Referral Partner Inquiry" />
+
+  <input name="partnerName" type="text" placeholder="Referral Partner Name" style={inputStyle} />
+  <input name="agency" type="text" placeholder="Agency / Organization" style={inputStyle} />
+  <input name="email" type="email" placeholder="Email Address" style={inputStyle} />
+  <input name="phone" type="tel" placeholder="Phone Number" style={inputStyle} />
+
+  <input name="clientName" type="text" placeholder="Client First Name or Initials" style={inputStyle} />
+  <input name="funding" type="text" placeholder="Funding Source" style={inputStyle} />
+  <input name="moveIn" type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
+
+  <textarea
+    name="details"
+    placeholder="Placement Details / Notes"
+    rows={6}
+    style={inputStyle}
+  />
+
+  <button type="submit" style={buttonStyle}>
+    Submit Referral
+  </button>
+</form>
       </section>
 
       <Footer />
