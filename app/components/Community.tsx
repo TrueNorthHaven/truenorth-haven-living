@@ -29,28 +29,11 @@ export default function Community() {
           Living Environment
         </p>
 
-        <h2
-          style={{
-            fontSize: "42px",
-            marginBottom: "20px",
-            color: "#1E2A3A",
-          }}
-        >
-          Structured, clean, and supportive shared housing
-        </h2>
+       <h2>A Calm, Respectful Home Environment</h2>
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#4A4A4A",
-          }}
-        >
-          Our homes provide a calm, organized environment where residents can
-          focus on stability, accountability, and forward progress. We emphasize
-          respect, routine, and a shared commitment to maintaining a positive
-          living space.
-        </p>
+<p>
+  Our homes are designed for adults who value routine, cleanliness, personal responsibility, and a cooperative shared living experience. Residents are expected to respect the home, follow house guidelines, and contribute to a peaceful environment.
+</p>
       </div>
     </section>
   );
