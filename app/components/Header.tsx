@@ -38,8 +38,8 @@ export default function Header() {
   src="/logo.jpg"
   alt="TrueNorth Haven Living logo"
   style={{
-    width: "120px",
-    height: "120px",
+    width: "140px",
+    height: "140px",
     objectFit: "contain",
   }}
 />
