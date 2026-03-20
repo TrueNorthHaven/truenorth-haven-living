@@ -38,6 +38,19 @@ export default function ReferralPartners() {
           professionals, and community partners seeking structured,
           non-medical shared housing options for appropriate clients.
         </p>
+        
+        <p
+  style={{
+    fontSize: "18px",
+    lineHeight: 1.8,
+    color: "#1E2A3A",
+    fontFamily: "Arial, sans-serif",
+    maxWidth: "720px",
+    margin: "20px auto 0",
+  }}
+>
+  We work with case managers, social workers, and community agencies across Clark County.
+</p>
 
         <p
           style={{
