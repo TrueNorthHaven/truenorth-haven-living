@@ -64,7 +64,11 @@ export default function Header() {
           <a href="/property-owners" style={{ color: "white", textDecoration: "none" }}>
             Property Owners
           </a>
-
+          
+          <a href="/apply" style={{ color: "white", textDecoration: "none" }}>
+            Apply Now
+          </a>
+          
           <a href="/contact" style={{ color: "white", textDecoration: "none" }}>
             Contact
           </a>
