@@ -53,6 +53,21 @@ export default function Footer() {
           area. Agency referrals and placement inquiries welcome.
         </p>
 
+        <div style={{ maxWidth: "900px", margin: "0 auto" }}>
+
+  <h3>...</h3>
+
+  <p>STRUCTURED SUPPORTIVE LIVING</p>
+
+  <p>Some other footer text</p>
+
+  <div style={{ marginTop: "20px", lineHeight: 1.8 }}>
+    <p>Email: Jhataragarner82@gmail.com</p>
+    <p>Phone: (702) 401-5416</p>
+    <p>Service Area: Clark County (Las Vegas, Henderson, and surrounding areas)</p>
+  </div>
+
+</div>
         <p
           style={{
             fontSize: "13px",
