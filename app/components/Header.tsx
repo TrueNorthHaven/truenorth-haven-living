@@ -14,7 +14,7 @@ export default function Header() {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "16px 28px",
+          padding: "20px 28px",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
@@ -49,7 +49,7 @@ export default function Header() {
 
           <span
             style={{
-              fontSize: "18px",
+              fontSize: "22px",
               fontWeight: 700,
               letterSpacing: "0.3px",
             }}
