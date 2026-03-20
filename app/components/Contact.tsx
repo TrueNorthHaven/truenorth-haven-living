@@ -52,14 +52,13 @@ export default function Contact() {
           }}
         >
           <p>
-            <strong>Email:</strong> Jhataragarner82@gmail.com
+            <strong>Email:</strong> info@truenorthhavenliving.com
           </p>
           <p>
-            <strong>Phone:</strong> (702) 401-5416
+            <strong>Phone:</strong> (702) 714-0340
           </p>
           <p>
-            <strong>Service Area:</strong> Clark County (Las Vegas, Henderson,
-            and surrounding areas)
+            <strong>Service Area:</strong> Clark County (Las Vegas, Henderson, and surrounding areas)
           </p>
           <p>
             <strong>Response Time:</strong> 24–48 hours
