@@ -1,10 +1,11 @@
-export default function Hero() {
+export default function Footer() {
   return (
-    <section
+    <footer
       style={{
-        padding: "110px 24px 90px",
-        background:
-          "linear-gradient(180deg, #F7F2EA 0%, #F3ECE2 58%, #EFE5D8 100%)",
+        backgroundColor: "#182434",
+        color: "#FFFFFF",
+        padding: "54px 24px 36px",
+        borderTop: "1px solid rgba(214,194,138,0.18)",
       }}
     >
       <div
@@ -12,134 +13,109 @@ export default function Hero() {
           maxWidth: "1180px",
           margin: "0 auto",
           display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(320px, 1fr))",
-          gap: "42px",
-          alignItems: "center",
+          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
+          gap: "28px",
+          alignItems: "start",
         }}
       >
         <div>
-          <p
+          <h3
             style={{
-              fontSize: "13px",
-              letterSpacing: "3px",
-              textTransform: "uppercase",
-              color: "#8D7B4C",
-              margin: "0 0 14px 0",
-              fontFamily: "Arial, sans-serif",
-              fontWeight: 700,
+              margin: "0 0 12px 0",
+              fontFamily: "Georgia, serif",
+              fontSize: "26px",
+              color: "#FFFFFF",
             }}
           >
-            Clark County Placement Housing
-          </p>
-
-          <h1
-            style={{
-              fontSize: "clamp(42px, 7vw, 76px)",
-              lineHeight: 1.02,
-              margin: "0 0 18px 0",
-              fontWeight: 700,
-              color: "#182434",
-            }}
-          >
-            Structured Shared Housing in Clark County
-          </h1>
+            TrueNorth Haven Living
+          </h3>
 
           <p
             style={{
-              fontSize: "19px",
-              lineHeight: 1.75,
-              maxWidth: "660px",
-              margin: "0 0 28px 0",
-              color: "#243548",
+              margin: 0,
               fontFamily: "Arial, sans-serif",
+              lineHeight: 1.8,
+              color: "#D7DDE3",
             }}
           >
-            Safe, non-medical housing for adults seeking stability, structure,
-            and a respectful living environment in Las Vegas, Henderson, and
-            surrounding areas.
+            Structured shared housing in Clark County for adults seeking
+            stability, consistency, and a respectful living environment.
           </p>
+        </div>
 
-          <div
+        <div>
+          <h4
             style={{
-              display: "flex",
-              gap: "16px",
-              flexWrap: "wrap",
-              alignItems: "center",
-            }}
-          >
-            <a
-              href="/apply"
-              style={{
-                display: "inline-block",
-                padding: "15px 28px",
-                backgroundColor: "#182434",
-                color: "#FFFFFF",
-                borderRadius: "8px",
-                textDecoration: "none",
-                fontWeight: 700,
-                fontFamily: "Arial, sans-serif",
-                boxShadow: "0 10px 22px rgba(0,0,0,0.12)",
-              }}
-            >
-              Start Placement Application
-            </a>
-
-            <a
-              href="/referrals"
-              style={{
-                display: "inline-block",
-                padding: "15px 28px",
-                backgroundColor: "transparent",
-                color: "#182434",
-                border: "1px solid #182434",
-                borderRadius: "8px",
-                textDecoration: "none",
-                fontWeight: 700,
-                fontFamily: "Arial, sans-serif",
-              }}
-            >
-              Referral Partners
-            </a>
-          </div>
-
-          <div
-            style={{
-              marginTop: "28px",
-              display: "flex",
-              gap: "20px",
-              flexWrap: "wrap",
-              color: "#4A5B6D",
+              margin: "0 0 12px 0",
               fontFamily: "Arial, sans-serif",
               fontSize: "14px",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              color: "#D6C28A",
             }}
           >
-            <span>• Non-medical housing</span>
-            <span>• Structured expectations</span>
-            <span>• Clark County service area</span>
-          </div>
+            Service Area
+          </h4>
+
+          <p
+            style={{
+              margin: 0,
+              fontFamily: "Arial, sans-serif",
+              lineHeight: 1.8,
+              color: "#D7DDE3",
+            }}
+          >
+            Clark County
+            <br />
+            Las Vegas, Henderson, and surrounding areas
+          </p>
         </div>
 
-        <div
-          style={{
-            minHeight: "430px",
-            borderRadius: "18px",
-            overflow: "hidden",
-            boxShadow: "0 18px 36px rgba(0,0,0,0.14)",
-            backgroundColor: "#D9CBB0",
-          }}
-        >
-          <img
-            src="/hero-community.jpg"
-            alt="TrueNorth Haven Living community"
+        <div>
+          <h4
             style={{
-              width: "100%",
-              height: "100%",
-              objectFit: "cover",
-              display: "block",
+              margin: "0 0 12px 0",
+              fontFamily: "Arial, sans-serif",
+              fontSize: "14px",
+              textTransform: "uppercase",
+              letterSpacing: "2px",
+              color: "#D6C28A",
             }}
-          />
+          >
+            Contact
+          </h4>
+
+          <p
+            style={{
+              margin: 0,
+              fontFamily: "Arial, sans-serif",
+              lineHeight: 1.8,
+              color: "#D7DDE3",
+            }}
+          >
+            (702) 401-5416
+            <br />
+            Jhataragarner82@gmail.com
+            <br />
+            Response time: 24–48 hours
+          </p>
         </div>
       </div>
-    </section>
+
+      <div
+        style={{
+          maxWidth: "1180px",
+          margin: "28px auto 0",
+          paddingTop: "18px",
+          borderTop: "1px solid rgba(255,255,255,0.08)",
+          fontFamily: "Arial, sans-serif",
+          fontSize: "13px",
+          color: "#A9B4BF",
+          textAlign: "center",
+        }}
+      >
+        © {new Date().getFullYear()} TrueNorth Haven Living. All rights reserved.
+      </div>
+    </footer>
   );
 }
