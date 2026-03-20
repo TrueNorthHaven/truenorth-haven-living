@@ -40,6 +40,19 @@ export default function PropertyOwners() {
         </p>
 
         <p
+  style={{
+    fontSize: "18px",
+    lineHeight: 1.8,
+    color: "#1E2A3A",
+    fontFamily: "Arial, sans-serif",
+    maxWidth: "720px",
+    margin: "20px auto 0",
+  }}
+>
+  We maintain clear communication, structured occupancy, and consistent oversight for every property we partner with.
+</p>
+
+        <p
           style={{
             fontSize: "18px",
             lineHeight: 1.8,
