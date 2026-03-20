@@ -6,48 +6,67 @@ export default function ApplyPage() {
     <main
       style={{
         backgroundColor: "#F7F2EA",
-        color: "#1E2A3A",
+        color: "#182434",
         fontFamily: "Georgia, serif",
       }}
     >
       <Header />
 
-      <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
-        <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "18px" }}>
-          Apply for Housing
-        </h1>
+      <section style={sectionStyle}>
+        <div style={contentWrap}>
+          <p style={eyebrowStyle}>Placement Inquiry</p>
+          <h1 style={pageTitleStyle}>Start Placement Application</h1>
+          <p style={leadStyle}>
+            Complete the form below to begin the placement review process.
+          </p>
 
-        <p
-          style={{
-            textAlign: "center",
-            marginBottom: "32px",
-            lineHeight: 1.7,
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          Complete the form below to begin the placement inquiry process.
-        </p>
+          <form
+            action="https://formspree.io/f/xpqynyeg"
+            method="POST"
+            style={formCardStyle}
+          >
+            <input type="hidden" name="formType" value="Apply Inquiry" />
 
-        <form action="https://formspree.io/f/xpqynyeg" method="POST" style={{ display: "grid", gap: "16px" }}>
-  <input type="hidden" name="formType" value="Apply Inquiry" />
+            <label style={labelStyle}>
+              Full Name
+              <input name="fullName" type="text" required style={inputStyle} />
+            </label>
 
-  <input name="fullName" type="text" placeholder="Full Name" style={inputStyle} />
-  <input name="email" type="email" placeholder="Email Address" style={inputStyle} />
-  <input name="phone" type="tel" placeholder="Phone Number" style={inputStyle} />
-  <input name="incomeSource" type="text" placeholder="Current Income Source" style={inputStyle} />
-  <input name="moveInTimeframe" type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
+            <label style={labelStyle}>
+              Email Address
+              <input name="email" type="email" required style={inputStyle} />
+            </label>
 
-  <textarea
-    name="situation"
-    placeholder="Tell us about your current situation"
-    rows={6}
-    style={inputStyle}
-  />
+            <label style={labelStyle}>
+              Phone Number
+              <input name="phone" type="tel" required style={inputStyle} />
+            </label>
 
-  <button type="submit" style={buttonStyle}>
-    Submit Application
-  </button>
-</form>
+            <label style={labelStyle}>
+              Current Income Source
+              <input name="incomeSource" type="text" style={inputStyle} />
+            </label>
+
+            <label style={labelStyle}>
+              Desired Move-In Timeframe
+              <input name="moveInTimeframe" type="text" style={inputStyle} />
+            </label>
+
+            <label style={labelStyle}>
+              Current Situation
+              <textarea
+                name="situation"
+                rows={6}
+                required
+                style={textareaStyle}
+              />
+            </label>
+
+            <button type="submit" style={buttonStyle}>
+              Submit Application
+            </button>
+          </form>
+        </div>
       </section>
 
       <Footer />
@@ -55,22 +74,85 @@ export default function ApplyPage() {
   );
 }
 
+const sectionStyle = {
+  padding: "90px 24px",
+};
+
+const contentWrap = {
+  maxWidth: "860px",
+  margin: "0 auto",
+};
+
+const eyebrowStyle = {
+  fontFamily: "Arial, sans-serif",
+  textTransform: "uppercase" as const,
+  letterSpacing: "2.5px",
+  color: "#8D7B4C",
+  fontWeight: 700,
+  fontSize: "13px",
+  margin: "0 0 12px 0",
+  textAlign: "center" as const,
+};
+
+const pageTitleStyle = {
+  fontSize: "46px",
+  margin: "0 0 14px 0",
+  textAlign: "center" as const,
+};
+
+const leadStyle = {
+  fontFamily: "Arial, sans-serif",
+  fontSize: "18px",
+  lineHeight: 1.75,
+  textAlign: "center" as const,
+  maxWidth: "680px",
+  margin: "0 auto 34px",
+  color: "#243548",
+};
+
+const formCardStyle = {
+  backgroundColor: "#FFFFFF",
+  borderRadius: "18px",
+  padding: "34px",
+  boxShadow: "0 16px 32px rgba(0,0,0,0.10)",
+  display: "grid",
+  gap: "18px",
+};
+
+const labelStyle = {
+  display: "grid",
+  gap: "8px",
+  fontFamily: "Arial, sans-serif",
+  fontSize: "14px",
+  fontWeight: 700,
+  color: "#243548",
+};
+
 const inputStyle = {
   width: "100%",
-  padding: "14px",
-  borderRadius: "6px",
-  border: "1px solid #ccc",
+  padding: "14px 16px",
+  borderRadius: "8px",
+  border: "1px solid #D7DDE3",
   fontSize: "16px",
   fontFamily: "Arial, sans-serif",
+  backgroundColor: "#FCFCFC",
+  boxSizing: "border-box" as const,
+};
+
+const textareaStyle = {
+  ...inputStyle,
+  minHeight: "140px",
+  resize: "vertical" as const,
 };
 
 const buttonStyle = {
-  padding: "14px 24px",
-  backgroundColor: "#2F4054",
-  color: "white",
+  padding: "15px 24px",
+  backgroundColor: "#182434",
+  color: "#FFFFFF",
   border: "none",
-  borderRadius: "6px",
+  borderRadius: "8px",
   fontSize: "16px",
-  fontWeight: 600,
+  fontWeight: 700,
   cursor: "pointer",
+  fontFamily: "Arial, sans-serif",
 };
