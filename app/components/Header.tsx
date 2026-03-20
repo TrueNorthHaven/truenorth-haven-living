@@ -46,7 +46,7 @@ export default function Header() {
           }}
         >
           <a
-            href="#about-section"
+            href="/about">About</a>
             style={{ color: "white", textDecoration: "none" }}
           >
             About
