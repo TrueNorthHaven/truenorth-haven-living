@@ -1,31 +1,37 @@
-export default function ContactPage() {
+export default function Contact() {
   return (
-    <main
+    <section
       style={{
+        padding: "80px 24px",
         backgroundColor: "#F7F2EA",
-        color: "#1E2A3A",
-        fontFamily: "Georgia, serif",
       }}
     >
-      <Header />
-
-      <section
+      <div
         style={{
           maxWidth: "900px",
           margin: "0 auto",
-          padding: "80px 24px",
           textAlign: "center",
         }}
       >
-        <h1 style={{ fontSize: "42px", marginBottom: "18px" }}>Contact Us</h1>
+        <h2
+          style={{
+            fontSize: "36px",
+            marginBottom: "18px",
+            color: "#1E2A3A",
+            fontWeight: 700,
+          }}
+        >
+          Contact Us
+        </h2>
 
         <p
           style={{
             fontSize: "18px",
             lineHeight: 1.8,
-            maxWidth: "700px",
-            margin: "0 auto 32px",
+            color: "#1E2A3A",
             fontFamily: "Arial, sans-serif",
+            maxWidth: "700px",
+            margin: "0 auto 30px",
           }}
         >
           For general questions, placement information, or partnership inquiries,
@@ -46,21 +52,20 @@ export default function ContactPage() {
           }}
         >
           <p>
-            <strong>Email:</strong> info@truenorthhavenliving.com
+            <strong>Email:</strong> Jhataragarner82@gmail.com
           </p>
           <p>
-            <strong>Phone:</strong> (702) 714-0340
+            <strong>Phone:</strong> (702) 401-5416
           </p>
           <p>
-            <strong>Service Area:</strong> Clark County (Las Vegas, Henderson, and surrounding areas)
+            <strong>Service Area:</strong> Clark County (Las Vegas, Henderson,
+            and surrounding areas)
           </p>
           <p>
             <strong>Response Time:</strong> 24–48 hours
           </p>
         </div>
-      </section>
-
-      <Footer />
-    </main>
+      </div>
+    </section>
   );
 }
