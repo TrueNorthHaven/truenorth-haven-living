@@ -45,59 +45,35 @@ export default function Header() {
             alignItems: "center",
           }}
         >
-          <a
-            href="/about">About</a>
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="/about" style={{ color: "white", textDecoration: "none" }}>
             About
           </a>
 
-          <a
-            href="#community"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#community" style={{ color: "white", textDecoration: "none" }}>
             Living Environment
           </a>
 
-          <a
-            href="#our-approach"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#our-approach" style={{ color: "white", textDecoration: "none" }}>
             Our Approach
           </a>
 
-          <a
-            href="#expectations"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#expectations" style={{ color: "white", textDecoration: "none" }}>
             Expectations
           </a>
 
-          <a
-            href="#referral-partners"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#referral-partners" style={{ color: "white", textDecoration: "none" }}>
             Referral Partners
           </a>
 
-          <a
-            href="#property-owners"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#property-owners" style={{ color: "white", textDecoration: "none" }}>
             Property Owners
           </a>
 
-          <a
-            href="#placement-process"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#placement-process" style={{ color: "white", textDecoration: "none" }}>
             Placement Inquiry
           </a>
 
-          <a
-            href="#contact"
-            style={{ color: "white", textDecoration: "none" }}
-          >
+          <a href="#contact" style={{ color: "white", textDecoration: "none" }}>
             Contact
           </a>
         </nav>
