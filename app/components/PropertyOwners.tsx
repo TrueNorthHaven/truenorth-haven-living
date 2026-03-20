@@ -1,5 +1,3 @@
-import Footer from "../components/Footer";
-
 export default function PropertyOwnersPage() {
   return (
     <main
