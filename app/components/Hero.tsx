@@ -8,32 +8,13 @@ export default function Hero() {
       }}
     >
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        <h1
-          style={{
-            fontSize: "clamp(42px, 7vw, 78px)",
-            lineHeight: 1.06,
-            margin: "0 0 18px 0",
-            fontWeight: 700,
-            color: "#1E2A3A",
-          }}
-        >
-          Safe, Structured Shared Housing in Clark County
-        </h1>
+        <h1>
+  Structured Shared Housing in Clark County
+</h1>
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.7,
-            maxWidth: "600px",
-            margin: "0 auto",
-            fontFamily: "Arial, sans-serif",
-            color: "#1E2A3A",
-          }}
-        >
-          Providing stable, non-medical housing for adults in Las Vegas,
-          Henderson, and surrounding areas.
-        </p>
-
+<p>
+  Safe, non-medical housing for adults seeking stability, structure, and a respectful living environment in Las Vegas, Henderson, and surrounding areas.
+</p>
         <div style={{ marginTop: "24px" }}>
           <a
             href="/apply"
