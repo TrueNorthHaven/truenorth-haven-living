@@ -55,7 +55,7 @@ export default function ContactPage() {
             <strong>Phone:</strong> (702) 714-0340
           </p>
           <p>
-            <strong>Service Area:</strong> Las Vegas & Henderson, Nevada
+            <strong>Service Area:</strong> Clark County (Las Vegas, Henderson, and surrounding areas)
           </p>
           <p>
             <strong>Response Time:</strong> 24–48 hours
