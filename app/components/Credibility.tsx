@@ -2,48 +2,35 @@ export default function Credibility() {
   return (
     <section
       style={{
-        padding: "60px 20px",
-        backgroundColor: "#FFFFFF",
+        padding: "60px 24px",
+        backgroundColor: "#ffffff",
         textAlign: "center",
       }}
     >
-      <div style={{ maxWidth: "1000px", margin: "0 auto" }}>
-        <p
-          style={{
-            letterSpacing: "3px",
-            color: "#C9A449",
-            fontSize: "14px",
-            textTransform: "uppercase",
-            fontFamily: "Arial, sans-serif",
-            marginBottom: "14px",
-          }}
-        >
-          Trusted Housing Placement
-        </p>
+      <h2 style={{ fontSize: "28px", marginBottom: "18px" }}>
+        A Structured, Reliable Housing Solution
+      </h2>
 
-        <h2
-          style={{
-            fontSize: "36px",
-            marginBottom: "20px",
-            color: "#1E2A3A",
-          }}
-        >
-          Working with referral partners and support programs
-        </h2>
+      <p style={{ maxWidth: "700px", margin: "0 auto 30px", lineHeight: 1.7 }}>
+        TrueNorth Haven Living provides safe, structured shared housing designed
+        to support stability, accountability, and long-term success for residents.
+        We work with individuals, families, and referral partners to ensure proper
+        placement and a consistent living environment.
+      </p>
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.8,
-            fontFamily: "Arial, sans-serif",
-            color: "#444",
-          }}
-        >
-          TrueNorth Haven Living collaborates with case managers,
-          community organizations, housing programs, and social service
-          agencies to provide stable structured housing options for
-          individuals working toward independence and long-term stability.
-        </p>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          gap: "30px",
+          flexWrap: "wrap",
+          marginTop: "20px",
+        }}
+      >
+        <div>✔ Structured Living Environment</div>
+        <div>✔ Verified Placement Process</div>
+        <div>✔ Partner-Friendly Communication</div>
+        <div>✔ Clean & Maintained Homes</div>
       </div>
     </section>
   );
