@@ -65,7 +65,7 @@ export default function Header() {
             Referral Partners
           </a>
 
-          <a href="#property-owners" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/property-owners" style={{ color: "white", textDecoration: "none" }}>
             Property Owners
           </a>
 
