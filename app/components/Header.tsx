@@ -49,7 +49,7 @@ export default function Header() {
             About
           </a>
 
-          <a href="#community" style={{ color: "white", textDecoration: "none" }}>
+          <a href="/housing" style={{ color: "white", textDecoration: "none" }}>
             Living Environment
           </a>
 
