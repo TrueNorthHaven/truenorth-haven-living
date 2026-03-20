@@ -33,9 +33,13 @@ export default function About() {
             marginBottom: "18px",
           }}
         >
-          TrueNorth Haven Living provides non-medical shared housing for adults
-          who are capable of independent living and benefit from a stable,
-          respectful household environment.
+          TrueNorth Haven Living provides structured, non-medical shared housing for adults in Clark County.
+
+Our focus is simple: provide safe, stable environments where individuals can maintain structure, rebuild consistency, and move forward with purpose.
+
+We are not a treatment program or clinical facility. Instead, we provide housing designed for individuals who are ready to live responsibly within a structured environment.
+
+We work with referral partners, case managers, and property owners to ensure placements are appropriate, stable, and sustainable.
         </p>
 
         <p
