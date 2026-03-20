@@ -1,121 +1,129 @@
-export default function Footer() {
+export default function Header() {
   return (
-    <footer
+    <header
       style={{
-        backgroundColor: "#182434",
-        color: "#FFFFFF",
-        padding: "54px 24px 36px",
-        borderTop: "1px solid rgba(214,194,138,0.18)",
+        position: "sticky",
+        top: 0,
+        zIndex: 1000,
+        backgroundColor: "rgba(24, 36, 52, 0.96)",
+        backdropFilter: "blur(8px)",
+        borderBottom: "1px solid rgba(214,194,138,0.18)",
       }}
     >
       <div
         style={{
-          maxWidth: "1180px",
+          maxWidth: "1240px",
           margin: "0 auto",
-          display: "grid",
-          gridTemplateColumns: "repeat(auto-fit, minmax(260px, 1fr))",
-          gap: "28px",
-          alignItems: "start",
+          padding: "18px 32px",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "space-between",
+          gap: "24px",
+          flexWrap: "wrap",
         }}
       >
-        <div>
-          <h3
+        <a
+          href="/"
+          style={{
+            display: "flex",
+            alignItems: "center",
+            gap: "16px",
+            textDecoration: "none",
+            minWidth: "fit-content",
+          }}
+        >
+          <img
+            src="/logo.jpg"
+            alt="TrueNorth Haven Living"
             style={{
-              margin: "0 0 12px 0",
-              fontFamily: "Georgia, serif",
-              fontSize: "26px",
-              color: "#FFFFFF",
+              width: "86px",
+              height: "86px",
+              objectFit: "contain",
+              display: "block",
             }}
-          >
-            TrueNorth Haven Living
-          </h3>
+          />
 
-          <p
-            style={{
-              margin: 0,
-              fontFamily: "Arial, sans-serif",
-              lineHeight: 1.8,
-              color: "#D7DDE3",
-            }}
-          >
-            Structured shared housing in Clark County for adults seeking
-            stability, consistency, and a respectful living environment.
-          </p>
-        </div>
+          <div style={{ display: "flex", flexDirection: "column", lineHeight: 1.05 }}>
+            <span
+              style={{
+                color: "#FFFFFF",
+                fontSize: "32px",
+                fontWeight: 700,
+                letterSpacing: "0.2px",
+                fontFamily: "Georgia, serif",
+                whiteSpace: "nowrap",
+              }}
+            >
+              TrueNorth Haven Living
+            </span>
 
-        <div>
-          <h4
-            style={{
-              margin: "0 0 12px 0",
-              fontFamily: "Arial, sans-serif",
-              fontSize: "14px",
-              textTransform: "uppercase",
-              letterSpacing: "2px",
-              color: "#D6C28A",
-            }}
-          >
-            Service Area
-          </h4>
+            <span
+              style={{
+                color: "#D6C28A",
+                fontSize: "12px",
+                letterSpacing: "2.4px",
+                textTransform: "uppercase",
+                fontFamily: "Arial, sans-serif",
+                marginTop: "8px",
+                whiteSpace: "nowrap",
+              }}
+            >
+              Structured Shared Housing
+            </span>
+          </div>
+        </a>
 
-          <p
+        <nav
+          style={{
+            display: "flex",
+            gap: "22px",
+            alignItems: "center",
+            flexWrap: "wrap",
+            justifyContent: "flex-end",
+            fontFamily: "Arial, sans-serif",
+            fontSize: "15px",
+          }}
+        >
+          <a href="/" style={linkStyle}>
+            Home
+          </a>
+          <a href="/about" style={linkStyle}>
+            About
+          </a>
+          <a href="/housing" style={linkStyle}>
+            Housing
+          </a>
+          <a href="/referrals" style={linkStyle}>
+            Referral Partners
+          </a>
+          <a href="/property-owners" style={linkStyle}>
+            Property Owners
+          </a>
+          <a
+            href="/apply"
             style={{
-              margin: 0,
-              fontFamily: "Arial, sans-serif",
-              lineHeight: 1.8,
-              color: "#D7DDE3",
+              backgroundColor: "#D6C28A",
+              color: "#182434",
+              padding: "10px 18px",
+              borderRadius: "8px",
+              fontWeight: 700,
+              textDecoration: "none",
+              boxShadow: "0 8px 18px rgba(0,0,0,0.15)",
             }}
           >
-            Clark County
-            <br />
-            Las Vegas, Henderson, and surrounding areas
-          </p>
-        </div>
-
-        <div>
-          <h4
-            style={{
-              margin: "0 0 12px 0",
-              fontFamily: "Arial, sans-serif",
-              fontSize: "14px",
-              textTransform: "uppercase",
-              letterSpacing: "2px",
-              color: "#D6C28A",
-            }}
-          >
+            Apply Now
+          </a>
+          <a href="/contact" style={linkStyle}>
             Contact
-          </h4>
-
-          <p
-            style={{
-              margin: 0,
-              fontFamily: "Arial, sans-serif",
-              lineHeight: 1.8,
-              color: "#D7DDE3",
-            }}
-          >
-            (702) 401-5416
-            <br />
-            Jhataragarner82@gmail.com
-            <br />
-            Response time: 24–48 hours
-          </p>
-        </div>
+          </a>
+        </nav>
       </div>
-
-      <div
-        style={{
-          maxWidth: "1180px",
-          margin: "28px auto 0",
-          paddingTop: "18px",
-          borderTop: "1px solid rgba(255,255,255,0.08)",
-          fontFamily: "Arial, sans-serif",
-          fontSize: "13px",
-          color: "#A9B4BF",
-          textAlign: "center",
-        }}
-      >
-        © {new Date().getFullYear()} TrueNorth Haven Living. All rights reserved.
-      </div>
-    </footer>
+    </header>
   );
 }
+
+const linkStyle = {
+  color: "#FFFFFF",
+  textDecoration: "none",
+  fontWeight: 500,
+};
