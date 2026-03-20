@@ -1,128 +1,70 @@
-export default function PropertyOwners() {
+import Header from "../components/Header";
+import Footer from "../components/Footer";
+
+export default function PropertyOwnersPage() {
   return (
-    <section
-      className="fade-in"
-      id="property-owners"
+    <main
       style={{
-        padding: "90px 20px",
-        backgroundColor: "#F4F6F8",
-        scrollMarginTop: "110px",
+        backgroundColor: "#F7F2EA",
+        color: "#1E2A3A",
+        fontFamily: "Georgia, serif",
       }}
     >
-      <div
-        style={{
-          maxWidth: "1100px",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        <p
-          style={{
-            color: "#B68C35",
-            fontFamily: "Arial, sans-serif",
-            textTransform: "uppercase",
-            letterSpacing: "3px",
-            fontSize: "14px",
-            marginBottom: "14px",
-            fontWeight: 700,
-          }}
-        >
-          For Property Owners
-        </p>
+      <Header />
 
-        <h2
-          style={{
-            fontSize: "42px",
-            lineHeight: 1.15,
-            marginBottom: "20px",
-            color: "#1E2A3A",
-          }}
-        >
-          Professionally managed shared housing with structure and accountability
-        </h2>
+      <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
+        <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "18px" }}>
+          Property Owner Inquiry
+        </h1>
 
         <p
           style={{
-            maxWidth: "800px",
-            margin: "0 auto 40px auto",
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#4A4A4A",
+            textAlign: "center",
+            marginBottom: "32px",
+            lineHeight: 1.7,
             fontFamily: "Arial, sans-serif",
           }}
         >
-          TrueNorth Haven Living partners with property owners to provide
-          structured shared housing in clean, respectful, and well-managed
-          residential environments.
+          If you are a property owner interested in partnering with TrueNorth Haven Living,
+          please submit your information below.
         </p>
 
-        <div
-          style={{
-            display: "grid",
-            gridTemplateColumns: "repeat(auto-fit, minmax(240px, 1fr))",
-            gap: "24px",
-            textAlign: "left",
-          }}
-        >
-          {[
-            "Structured resident screening and placement review",
-            "Clear house rules and household expectations",
-            "Routine property inspections and oversight",
-            "Clean and organized living environments",
-            "Stable occupancy and consistent rent structure",
-            "Respect for neighbors and surrounding community",
-          ].map((item) => (
-            <div
-              key={item}
-              style={{
-                backgroundColor: "#FFFFFF",
-                borderRadius: "18px",
-                padding: "26px",
-                boxShadow: "0 10px 24px rgba(0,0,0,0.06)",
-                fontFamily: "Arial, sans-serif",
-                fontSize: "16px",
-                lineHeight: 1.7,
-                color: "#333",
-              }}
-            >
-              {item}
-            </div>
-          ))}
-        </div>
+        <form style={{ display: "grid", gap: "16px" }}>
+          <input type="text" placeholder="Full Name" style={inputStyle} />
+          <input type="text" placeholder="Company Name (Optional)" style={inputStyle} />
+          <input type="email" placeholder="Email Address" style={inputStyle} />
+          <input type="tel" placeholder="Phone Number" style={inputStyle} />
+          <input type="text" placeholder="Property Address" style={inputStyle} />
+          <input type="text" placeholder="Number of Bedrooms" style={inputStyle} />
+          <input type="text" placeholder="Monthly Rent Requested" style={inputStyle} />
+          <textarea placeholder="Additional Property Details" rows={6} style={inputStyle} />
+          <button type="submit" style={buttonStyle}>
+            Submit Property Inquiry
+          </button>
+        </form>
+      </section>
 
-        <p
-          style={{
-            maxWidth: "820px",
-            margin: "34px auto 0 auto",
-            fontSize: "17px",
-            lineHeight: 1.8,
-            color: "#4A4A4A",
-            fontFamily: "Arial, sans-serif",
-          }}
-        >
-          We aim to maintain calm, structured homes that protect property
-          condition while supporting residents working toward stability and
-          independence.
-        </p>
-
-        <div style={{ marginTop: "34px" }}>
-          <a
-            href="#contact"
-            style={{
-              backgroundColor: "#D8B25A",
-              color: "#1E2A3A",
-              padding: "15px 30px",
-              borderRadius: "999px",
-              textDecoration: "none",
-              fontWeight: 700,
-              fontFamily: "Arial, sans-serif",
-              display: "inline-block",
-            }}
-          >
-            Partner With Us
-          </a>
-        </div>
-      </div>
-    </section>
+      <Footer />
+    </main>
   );
 }
+
+const inputStyle = {
+  width: "100%",
+  padding: "14px",
+  borderRadius: "6px",
+  border: "1px solid #ccc",
+  fontSize: "16px",
+  fontFamily: "Arial, sans-serif",
+};
+
+const buttonStyle = {
+  padding: "14px 24px",
+  backgroundColor: "#2F4054",
+  color: "white",
+  border: "none",
+  borderRadius: "6px",
+  fontSize: "16px",
+  fontWeight: 600,
+  cursor: "pointer",
+};
