@@ -28,21 +28,26 @@ export default function ApplyPage() {
           Complete the form below to begin the placement inquiry process.
         </p>
 
-        <form style={{ display: "grid", gap: "16px" }}>
-          <input type="text" placeholder="Full Name" style={inputStyle} />
-          <input type="email" placeholder="Email Address" style={inputStyle} />
-          <input type="tel" placeholder="Phone Number" style={inputStyle} />
-          <input type="text" placeholder="Current Income Source" style={inputStyle} />
-          <input type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
-          <textarea
-            placeholder="Tell us a little about your current situation"
-            rows={6}
-            style={inputStyle}
-          />
-          <button type="submit" style={buttonStyle}>
-            Submit Application
-          </button>
-        </form>
+        <form action="https://formspree.io/f/xpqynyeg" method="POST" style={{ display: "grid", gap: "16px" }}>
+  <input type="hidden" name="formType" value="Apply Inquiry" />
+
+  <input name="fullName" type="text" placeholder="Full Name" style={inputStyle} />
+  <input name="email" type="email" placeholder="Email Address" style={inputStyle} />
+  <input name="phone" type="tel" placeholder="Phone Number" style={inputStyle} />
+  <input name="incomeSource" type="text" placeholder="Current Income Source" style={inputStyle} />
+  <input name="moveInTimeframe" type="text" placeholder="Desired Move-In Timeframe" style={inputStyle} />
+
+  <textarea
+    name="situation"
+    placeholder="Tell us about your current situation"
+    rows={6}
+    style={inputStyle}
+  />
+
+  <button type="submit" style={buttonStyle}>
+    Submit Application
+  </button>
+</form>
       </section>
 
       <Footer />
