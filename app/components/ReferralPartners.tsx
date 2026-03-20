@@ -1,71 +1,45 @@
 export default function ReferralPartners() {
   return (
-    <section
-      style={{
-        padding: "80px 24px",
-        backgroundColor: "#F7F2EA",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "36px",
-            marginBottom: "18px",
-            color: "#1E2A3A",
-            fontWeight: 700,
-          }}
-        >
-          Referral Partners
-        </h2>
+    <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
+      <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "20px" }}>
+        Referral Partners
+      </h1>
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#1E2A3A",
-            fontFamily: "Arial, sans-serif",
-            maxWidth: "720px",
-            margin: "0 auto 20px",
-          }}
-        >
-          We welcome referrals from case managers, agencies, and social services
-          professionals, and community partners seeking structured,
-          non-medical shared housing options for appropriate clients.
-        </p>
-        
-        <p
-  style={{
-    fontSize: "18px",
-    lineHeight: 1.8,
-    color: "#1E2A3A",
-    fontFamily: "Arial, sans-serif",
-    maxWidth: "720px",
-    margin: "20px auto 0",
-  }}
->
-  We work with case managers, social workers, and community agencies across Clark County.
-</p>
+      <p style={{ textAlign: "center", marginBottom: "30px" }}>
+        Submit a referral for placement consideration.
+      </p>
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#1E2A3A",
-            fontFamily: "Arial, sans-serif",
-            maxWidth: "720px",
-            margin: "0 auto",
-          }}
-        >
-          Use the referral inquiry form below to share placement details and a
-          member of our team will follow up regarding the next steps.
-        </p>
-      </div>
+      <form action="https://formspree.io/f/xkoqeqad" method="POST">
+        <input name="Name" placeholder="Full Name" required style={inputStyle} />
+        <input name="Organization" placeholder="Organization" style={inputStyle} />
+        <input name="Email" type="email" placeholder="Email" required style={inputStyle} />
+        <input name="Phone" placeholder="Phone Number" style={inputStyle} />
+
+        <textarea name="Client Details" placeholder="Client Details" required style={textareaStyle} />
+
+        <button type="submit" style={buttonStyle}>Submit Referral</button>
+      </form>
     </section>
   );
 }
+
+const inputStyle = {
+  width: "100%",
+  padding: "12px",
+  marginBottom: "12px",
+};
+
+const textareaStyle = {
+  width: "100%",
+  padding: "12px",
+  marginBottom: "12px",
+  minHeight: "120px",
+};
+
+const buttonStyle = {
+  width: "100%",
+  padding: "14px",
+  backgroundColor: "#2F4054",
+  color: "white",
+  border: "none",
+};
