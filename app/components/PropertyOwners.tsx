@@ -34,9 +34,9 @@ export default function PropertyOwners() {
             margin: "0 auto 20px",
           }}
         >
-          We partner with property owners who are looking for responsible,
-          structured occupancy solutions backed by consistent communication and
-          clear expectations.
+          We partner with property owners who are seeking responsible,
+          structured occupancy solutions supported by clear expectations and
+          dependable communication.
         </p>
 
         <p
@@ -50,8 +50,8 @@ export default function PropertyOwners() {
           }}
         >
           If you have a property in Clark County and would like to explore a
-          potential partnership, submit your information through the inquiry
-          form below.
+          potential partnership, use the property owner inquiry form to share
+          your information and a member of our team will follow up.
         </p>
       </div>
     </section>
