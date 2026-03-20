@@ -43,20 +43,18 @@ export default function Hero() {
             Structured Shared Housing in Las Vegas & Henderson
           </h1>
 
-          <p
-            style={{
-              fontSize: "18px",
-              lineHeight: 1.7,
-              maxWidth: "700px",
-              margin: "0 0 24px 0",
-              color: "#1E2A3A",
-              fontFamily: "Arial, sans-serif",
-            }}
-          >
-            Safe, structured housing designed to support stability,
-            accountability, and long-term success for adults seeking a better
-            path forward.
-          </p>
+         <p
+  style={{
+    fontSize: "18px",
+    lineHeight: 1.7,
+    maxWidth: "700px",
+    margin: "0 0 24px 0",
+    color: "#1E2A3A",
+    fontFamily: "Arial, sans-serif",
+  }}
+>
+  Structured shared housing for adults who can live independently and benefit from a stable, respectful home environment.
+</p>
 
           <a
             href="/apply"
