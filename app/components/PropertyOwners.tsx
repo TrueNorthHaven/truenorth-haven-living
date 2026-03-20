@@ -1,72 +1,45 @@
 export default function PropertyOwners() {
   return (
-    <section
-      style={{
-        padding: "80px 24px",
-        backgroundColor: "#F7F2EA",
-      }}
-    >
-      <div
-        style={{
-          maxWidth: "900px",
-          margin: "0 auto",
-          textAlign: "center",
-        }}
-      >
-        <h2
-          style={{
-            fontSize: "36px",
-            marginBottom: "18px",
-            color: "#1E2A3A",
-            fontWeight: 700,
-          }}
-        >
-          Property Owners
-        </h2>
+    <section style={{ padding: "80px 24px", maxWidth: "800px", margin: "0 auto" }}>
+      <h1 style={{ textAlign: "center", fontSize: "42px", marginBottom: "20px" }}>
+        Property Owners
+      </h1>
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#1E2A3A",
-            fontFamily: "Arial, sans-serif",
-            maxWidth: "720px",
-            margin: "0 auto 20px",
-          }}
-        >
-          We partner with property owners who are seeking responsible,
-          structured occupancy solutions supported by clear expectations and
-          dependable communication.
-        </p>
+      <p style={{ textAlign: "center", marginBottom: "30px" }}>
+        Partner with us to provide safe, structured housing.
+      </p>
 
-        <p
-  style={{
-    fontSize: "18px",
-    lineHeight: 1.8,
-    color: "#1E2A3A",
-    fontFamily: "Arial, sans-serif",
-    maxWidth: "720px",
-    margin: "20px auto 0",
-  }}
->
-  We maintain clear communication, structured occupancy, and consistent oversight for every property we partner with.
-</p>
+      <form action="https://formspree.io/f/xreydywb" method="POST">
+        <input name="Name" placeholder="Full Name" required style={inputStyle} />
+        <input name="Company" placeholder="Company (if applicable)" style={inputStyle} />
+        <input name="Email" type="email" placeholder="Email" required style={inputStyle} />
+        <input name="Phone" placeholder="Phone Number" style={inputStyle} />
 
-        <p
-          style={{
-            fontSize: "18px",
-            lineHeight: 1.8,
-            color: "#1E2A3A",
-            fontFamily: "Arial, sans-serif",
-            maxWidth: "720px",
-            margin: "0 auto",
-          }}
-        >
-          If you have a property in Clark County and would like to explore a
-          Potential partnership, use the property owner inquiry form to share
-          Your information and a member of our team will follow up.
-        </p>
-      </div>
+        <textarea name="Property Info" placeholder="Property Details" required style={textareaStyle} />
+
+        <button type="submit" style={buttonStyle}>Submit Property Info</button>
+      </form>
     </section>
   );
 }
+
+const inputStyle = {
+  width: "100%",
+  padding: "12px",
+  marginBottom: "12px",
+};
+
+const textareaStyle = {
+  width: "100%",
+  padding: "12px",
+  marginBottom: "12px",
+  minHeight: "120px",
+};
+
+const buttonStyle = {
+  width: "100%",
+  padding: "14px",
+  backgroundColor: "#2F4054",
+  color: "white",
+  border: "none",
+};
