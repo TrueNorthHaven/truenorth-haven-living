@@ -5,8 +5,9 @@ export default function Header() {
         position: "sticky",
         top: 0,
         zIndex: 1000,
-        backgroundColor: "#2F4054",
-        borderBottom: "1px solid rgba(255,255,255,0.08)",
+        backgroundColor: "rgba(24, 36, 52, 0.96)",
+        backdropFilter: "blur(8px)",
+        borderBottom: "1px solid rgba(214,194,138,0.18)",
       }}
     >
       <div
@@ -18,6 +19,7 @@ export default function Header() {
           alignItems: "center",
           justifyContent: "space-between",
           gap: "24px",
+          flexWrap: "wrap",
         }}
       >
         <a
@@ -34,8 +36,8 @@ export default function Header() {
             src="/logo.jpg"
             alt="TrueNorth Haven Living"
             style={{
-              width: "78px",
-              height: "78px",
+              width: "86px",
+              height: "86px",
               objectFit: "contain",
               display: "block",
             }}
@@ -45,7 +47,7 @@ export default function Header() {
             <span
               style={{
                 color: "#FFFFFF",
-                fontSize: "34px",
+                fontSize: "32px",
                 fontWeight: 700,
                 letterSpacing: "0.2px",
                 fontFamily: "Georgia, serif",
@@ -62,7 +64,7 @@ export default function Header() {
                 letterSpacing: "2.4px",
                 textTransform: "uppercase",
                 fontFamily: "Arial, sans-serif",
-                marginTop: "6px",
+                marginTop: "8px",
                 whiteSpace: "nowrap",
               }}
             >
@@ -74,48 +76,43 @@ export default function Header() {
         <nav
           style={{
             display: "flex",
-            gap: "24px",
+            gap: "22px",
             alignItems: "center",
-            fontFamily: "Arial, sans-serif",
-            fontSize: "15px",
             flexWrap: "wrap",
             justifyContent: "flex-end",
+            fontFamily: "Arial, sans-serif",
+            fontSize: "15px",
           }}
         >
           <a href="/" style={linkStyle}>
             Home
           </a>
-
           <a href="/about" style={linkStyle}>
             About
           </a>
-
           <a href="/housing" style={linkStyle}>
             Housing
           </a>
-
           <a href="/referrals" style={linkStyle}>
             Referral Partners
           </a>
-
           <a href="/property-owners" style={linkStyle}>
             Property Owners
           </a>
-
           <a
             href="/apply"
             style={{
               backgroundColor: "#D6C28A",
-              color: "#1E2A3A",
+              color: "#182434",
               padding: "10px 18px",
-              borderRadius: "6px",
+              borderRadius: "8px",
               fontWeight: 700,
               textDecoration: "none",
+              boxShadow: "0 8px 18px rgba(0,0,0,0.15)",
             }}
           >
-            Apply
+            Apply Now
           </a>
-
           <a href="/contact" style={linkStyle}>
             Contact
           </a>
