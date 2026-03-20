@@ -73,6 +73,22 @@ export default function Hero() {
 
         {/* UPDATED HEADLINE */}
         <h1
+          <a
+  href="/apply"
+  style={{
+    display: "inline-block",
+    marginTop: "24px",
+    padding: "14px 28px",
+    backgroundColor: "#2F4054",
+    color: "white",
+    textDecoration: "none",
+    fontSize: "16px",
+    borderRadius: "6px",
+    fontWeight: "600",
+  }}
+>
+  Apply for Housing
+</a>
           style={{
             fontSize: "clamp(42px, 7vw, 78px)",
             lineHeight: 1.06,
