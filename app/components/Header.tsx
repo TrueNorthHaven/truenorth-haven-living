@@ -34,16 +34,13 @@ export default function Header() {
             whiteSpace: "nowrap",
           }}
         >
-          <img
+         <img
   src="/logo.jpg"
   alt="TrueNorth Haven Living logo"
   style={{
-    width: "70px",
-    height: "70px",
+    width: "120px",
+    height: "120px",
     objectFit: "contain",
-    borderRadius: "50%",
-    backgroundColor: "white",
-    padding: "4px",
   }}
 />
 
