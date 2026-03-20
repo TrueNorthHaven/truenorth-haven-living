@@ -72,8 +72,33 @@ export default function Hero() {
         </p>
 
         {/* UPDATED HEADLINE */}
-        <h1
-          <a
+<h1
+  style={{
+    fontSize: "clamp(42px, 7vw, 78px)",
+    lineHeight: 1.06,
+    margin: "0 0 18px 0",
+    fontWeight: 700,
+  }}
+>
+  Structured Shared Housing in Las Vegas & Henderson
+</h1>
+
+{/* UPDATED SUBTEXT */}
+<p
+  style={{
+    fontSize: "18px",
+    lineHeight: 1.7,
+    maxWidth: "700px",
+    margin: "0 auto",
+    color: "#1E2A3A",
+    fontFamily: "Arial, sans-serif",
+  }}
+>
+  Safe, structured housing designed to support stability, accountability, and
+  long-term success for adults seeking a better path forward.
+</p>
+
+<a
   href="/apply"
   style={{
     display: "inline-block",
@@ -89,37 +114,6 @@ export default function Hero() {
 >
   Apply for Housing
 </a>
-          style={{
-            fontSize: "clamp(42px, 7vw, 78px)",
-            lineHeight: 1.06,
-            margin: "0 0 18px 0",
-            fontWeight: 700,
-          }}
-        >
-          Structured Shared Housing in Las Vegas & Henderson
-        </h1>
-
-        {/* UPDATED SUBTEXT */}
-        <p
-          style={{
-            fontSize: "clamp(16px, 2vw, 22px)",
-            marginBottom: "30px",
-            fontFamily: "Arial, sans-serif",
-            lineHeight: 1.5,
-          }}
-        >
-          Safe, stable, and professionally managed housing for independent adults seeking structure, accountability, and a supportive living environment.
-        </p>
-
-        {/* BUTTONS */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            gap: "14px",
-            flexWrap: "wrap",
-          }}
-        >
           <a
             href="#placement-process"
             style={{
