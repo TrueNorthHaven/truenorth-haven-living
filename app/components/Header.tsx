@@ -35,15 +35,15 @@ export default function Header() {
           }}
         >
           <img
-            src="/logo.jpg"
-            alt="TrueNorth Haven Living logo"
-            style={{
-              width: "42px",
-              height: "42px",
-              objectFit: "cover",
-              borderRadius: "50%",
-            }}
-          />
+  src="/logo.jpg"
+  alt="TrueNorth Haven Living logo"
+  style={{
+    width: "42px",
+    height: "42px",
+    objectFit: "cover",
+    borderRadius: "50%",
+  }}
+/>
 
           <span
             style={{
