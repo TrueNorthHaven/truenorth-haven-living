@@ -28,7 +28,7 @@ export default function Hero() {
               fontWeight: "600",
             }}
           >
-            Apply for Housing
+            Start Placement Application
           </a>
         </div>
       </div>
