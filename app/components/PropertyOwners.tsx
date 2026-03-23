@@ -10,14 +10,14 @@ const inputStyle = {
 };
 
 const buttonStyle = {
-  padding: "12px 24px",
+  padding: "14px 28px",
   fontSize: "16px",
   backgroundColor: "#243548",
   color: "#ffffff",
   border: "none",
   cursor: "pointer",
-  width: "fit-content",
-  margin: "12px auto 0",
+  borderRadius: "4px",
+  margin: "16px auto 0",
 };
 
 export default function PropertyOwners() {
