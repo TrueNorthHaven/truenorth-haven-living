@@ -77,14 +77,7 @@ export default function PropertyOwners() {
 
         <div style={{ marginTop: "40px" }}>
   <h2>Partner With Us</h2>
-  <p
-    style={{
-      fontSize: "18px",
-      lineHeight: 1.8,
-      maxWidth: "760px",
-      margin: "0 auto 20px",
-    }}
-  >
+  <p>
     If you’re a property owner interested in working with us, submit your information below and we’ll follow up within 24–48 hours.
   </p>
 
@@ -100,42 +93,11 @@ export default function PropertyOwners() {
   >
     <input type="hidden" name="formType" value="Property Owner Inquiry" />
 
-    <input
-      type="text"
-      name="fullName"
-      placeholder="Full Name"
-      required
-      style={inputStyle}
-    />
-
-    <input
-      type="email"
-      name="email"
-      placeholder="Email Address"
-      required
-      style={inputStyle}
-    />
-
-    <input
-      type="tel"
-      name="phone"
-      placeholder="Phone Number"
-      style={inputStyle}
-    />
-
-    <input
-      type="text"
-      name="propertyLocation"
-      placeholder="Property Location"
-      style={inputStyle}
-    />
-
-    <input
-      type="text"
-      name="propertyType"
-      placeholder="Property Type"
-      style={inputStyle}
-    />
+    <input type="text" name="fullName" placeholder="Full Name" required style={inputStyle} />
+    <input type="email" name="email" placeholder="Email Address" required style={inputStyle} />
+    <input type="tel" name="phone" placeholder="Phone Number" style={inputStyle} />
+    <input type="text" name="propertyLocation" placeholder="Property Location" style={inputStyle} />
+    <input type="text" name="propertyType" placeholder="Property Type" style={inputStyle} />
 
     <textarea
       name="message"
@@ -149,3 +111,6 @@ export default function PropertyOwners() {
     </button>
   </form>
 </div>
+</section>
+);
+}
