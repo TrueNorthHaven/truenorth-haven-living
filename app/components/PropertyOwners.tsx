@@ -69,21 +69,7 @@ export default function PropertyOwners() {
 
         <h2 style={{ marginTop: "40px" }}>How We Maintain Your Property</h2>
 
-<ul
-  style={{
-    listStylePosition: "inside",
-    padding: 0,
-    margin: "16px auto 0",
-    lineHeight: 1.8,
-    maxWidth: "700px",
-    textAlign: "center",
-  }}
->
-  <li>Structured routines that support stability</li>
-  <li>Clean, maintained shared spaces</li>
-  <li>Clear expectations that promote accountability</li>
-  <li>A respectful, cooperative living environment</li>
-</ul>
+v
 
         <div style={{ marginTop: "40px" }}>
   <h2>Partner With Us</h2>
