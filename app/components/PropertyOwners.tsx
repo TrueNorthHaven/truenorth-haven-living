@@ -69,10 +69,20 @@ export default function PropertyOwners() {
 
         <h2 style={{ marginTop: "40px" }}>How We Maintain Your Property</h2>
 
-<ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
-  <li>Structured occupancy with clear household expectations</li>
-  <li>Careful placement to ensure resident fit and consistency</li>
-  <li>Ongoing communication and oversight to maintain a stable environment</li>
+<ul
+  style={{
+    listStylePosition: "inside",
+    padding: 0,
+    margin: "16px auto 0",
+    lineHeight: 1.8,
+    maxWidth: "700px",
+    textAlign: "center",
+  }}
+>
+  <li>Structured routines that support stability</li>
+  <li>Clean, maintained shared spaces</li>
+  <li>Clear expectations that promote accountability</li>
+  <li>A respectful, cooperative living environment</li>
 </ul>
 
         <div style={{ marginTop: "40px" }}>
