@@ -74,6 +74,46 @@ export default function PropertyOwners() {
   <li>Careful placement to ensure resident fit and consistency</li>
   <li>Ongoing communication and oversight to maintain a stable environment</li>
 </ul>
+
+        <div style={{ marginTop: "40px" }}>
+  <h2>Partner With Us</h2>
+  <p>
+    If you’re a property owner interested in working with us, submit your information below and we’ll follow up within 24–48 hours.
+  </p>
+
+  <form
+    action="https://formspree.io/f/xpqvnyeg"
+    method="POST"
+    style={{ marginTop: "20px" }}
+  >
+    <input type="hidden" name="formType" value="Property Owner Inquiry" />
+
+    <input
+      type="text"
+      name="name"
+      placeholder="Full Name"
+      required
+      style={{ display: "block", marginBottom: "10px", width: "100%" }}
+    />
+
+    <input
+      type="email"
+      name="email"
+      placeholder="Email Address"
+      required
+      style={{ display: "block", marginBottom: "10px", width: "100%" }}
+    />
+
+    <input
+      type="text"
+      name="propertyLocation"
+      placeholder="Property Location"
+      style={{ display: "block", marginBottom: "10px", width: "100%" }}
+    />
+
+    <button type="submit">Submit Inquiry</button>
+  </form>
+</div>
       </div>
     </section>
   );
