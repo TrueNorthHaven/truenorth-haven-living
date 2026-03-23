@@ -29,20 +29,21 @@ export default function Community() {
           Living Environment
         </p>
 
-       <h2>A Calm, Respectful Home Environment
-
-Our homes are designed for adults who value consistency, cleanliness, and personal responsibility.
-
-Residents benefit from:
-• Structured routines that support stability  
-• Clean, maintained shared spaces  
-• Clear expectations that promote accountability  
-• A respectful, cooperative living environment  
-
-This is a space built for individuals who are ready for structure—not chaos.</h2>
+       <h2>A Calm, Respectful Home Environment</h2>
 
 <p>
-  Our homes are designed for adults who value routine, cleanliness, personal responsibility, and a cooperative shared living experience. Residents are expected to respect the home, follow house guidelines, and contribute to a peaceful environment.
+Our homes are designed for adults who value consistency, cleanliness, and personal responsibility.
+</p>
+
+<ul style={{ lineHeight: 1.8, marginTop: "16px" }}>
+  <li>Structured routines that support stability</li>
+  <li>Clean, maintained shared spaces</li>
+  <li>Clear expectations that promote accountability</li>
+  <li>A respectful, cooperative living environment</li>
+</ul>
+
+<p style={{ marginTop: "16px" }}>
+This is a space built for individuals who are ready for structure—not chaos.
 </p>
       </div>
     </section>
