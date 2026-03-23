@@ -204,7 +204,7 @@ export default function ReferralPartners() {
           </p>
 
           <form
-            action="https://formspree.io/f/xpqvnyeg"
+            action="https://formspree.io/f/xkoqeqad"
             method="POST"
             style={{
               maxWidth: "900px",
