@@ -35,12 +35,20 @@ export default function Community() {
 Our homes are designed for adults who value consistency, cleanliness, and personal responsibility.
 </p>
 
-<ul style={{ lineHeight: 1.8, marginTop: "16px" }}>
-  <li>Structured routines that support stability</li>
-  <li>Clean, maintained shared spaces</li>
-  <li>Clear expectations that promote accountability</li>
-  <li>A respectful, cooperative living environment</li>
-</ul>
+<div
+  style={{
+    marginTop: "16px",
+    lineHeight: 1.8,
+    maxWidth: "700px",
+    marginLeft: "auto",
+    marginRight: "auto",
+  }}
+>
+  <p>Structured routines that support stability</p>
+  <p>Clean, maintained shared spaces</p>
+  <p>Clear expectations that promote accountability</p>
+  <p>A respectful, cooperative living environment</p>
+</div>
 
 <p style={{ marginTop: "16px" }}>
 This is a space built for individuals who are ready for structure—not chaos.
