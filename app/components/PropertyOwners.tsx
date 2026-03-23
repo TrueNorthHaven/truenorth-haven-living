@@ -66,6 +66,14 @@ export default function PropertyOwners() {
           We maintain clear communication, structured occupancy, and consistent
           oversight for every property we partner with.
         </p>
+
+        <h2 style={{ marginTop: "40px" }}>How We Maintain Your Property</h2>
+
+<ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+  <li>Structured occupancy with clear household expectations</li>
+  <li>Careful placement to ensure resident fit and consistency</li>
+  <li>Ongoing communication and oversight to maintain a stable environment</li>
+</ul>
       </div>
     </section>
   );
