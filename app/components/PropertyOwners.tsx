@@ -77,23 +77,35 @@ export default function PropertyOwners() {
 
         <div style={{ marginTop: "40px" }}>
   <h2>Partner With Us</h2>
-  <p>
+  <p
+    style={{
+      fontSize: "18px",
+      lineHeight: 1.8,
+      maxWidth: "760px",
+      margin: "0 auto 20px",
+    }}
+  >
     If you’re a property owner interested in working with us, submit your information below and we’ll follow up within 24–48 hours.
   </p>
 
   <form
     action="https://formspree.io/f/xpqvnyeg"
     method="POST"
-    style={{ marginTop: "20px" }}
+    style={{
+      maxWidth: "900px",
+      margin: "0 auto",
+      display: "grid",
+      gap: "12px",
+    }}
   >
     <input type="hidden" name="formType" value="Property Owner Inquiry" />
 
     <input
       type="text"
-      name="name"
+      name="fullName"
       placeholder="Full Name"
       required
-      style={{ display: "block", marginBottom: "10px", width: "100%" }}
+      style={inputStyle}
     />
 
     <input
@@ -101,20 +113,39 @@ export default function PropertyOwners() {
       name="email"
       placeholder="Email Address"
       required
-      style={{ display: "block", marginBottom: "10px", width: "100%" }}
+      style={inputStyle}
+    />
+
+    <input
+      type="tel"
+      name="phone"
+      placeholder="Phone Number"
+      style={inputStyle}
     />
 
     <input
       type="text"
       name="propertyLocation"
       placeholder="Property Location"
-      style={{ display: "block", marginBottom: "10px", width: "100%" }}
+      style={inputStyle}
     />
 
-    <button type="submit">Submit Inquiry</button>
+    <input
+      type="text"
+      name="propertyType"
+      placeholder="Property Type"
+      style={inputStyle}
+    />
+
+    <textarea
+      name="message"
+      placeholder="Tell us a little about your property or partnership interest"
+      rows={5}
+      style={inputStyle}
+    />
+
+    <button type="submit" style={buttonStyle}>
+      Submit Inquiry
+    </button>
   </form>
 </div>
-      </div>
-    </section>
-  );
-}
