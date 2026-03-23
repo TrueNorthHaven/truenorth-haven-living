@@ -1,4 +1,3 @@
-export default function ReferralPartners() {
 const inputStyle = {
   width: "100%",
   padding: "12px 14px",
@@ -21,7 +20,7 @@ const buttonStyle = {
   margin: "12px auto 0",
 };
 
-export default function PropertyOwners() {
+export default function ReferralPartners() {
   return (
     <section
       style={{
@@ -30,19 +29,7 @@ export default function PropertyOwners() {
         textAlign: "center",
       }}
     >
-      <div style={{ maxWidth: "900px", margin: "0 auto" }}>
-        <p
-          style={{
-            letterSpacing: "3px",
-            textTransform: "uppercase",
-            color: "#c89b3c",
-            marginBottom: "16px",
-            fontWeight: 600,
-          }}
-        >
-          Owner Partnership Inquiries
-        </p>
-
+      <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
         <h1
           style={{
             fontSize: "64px",
@@ -51,7 +38,7 @@ export default function PropertyOwners() {
             marginBottom: "24px",
           }}
         >
-          Property Owners
+          Referral Partners
         </h1>
 
         <p
@@ -60,13 +47,13 @@ export default function PropertyOwners() {
             lineHeight: 1.8,
             color: "#243548",
             fontFamily: "Arial, sans-serif",
-            maxWidth: "760px",
+            maxWidth: "820px",
             margin: "0 auto 18px",
           }}
         >
-          We partner with property owners who are seeking responsible, structured
-          occupancy solutions supported by clear expectations and dependable
-          communication.
+          We welcome referrals from case managers, agencies, social service
+          professionals, and community partners seeking structured, non-medical
+          shared housing options for appropriate clients.
         </p>
 
         <p
@@ -75,40 +62,123 @@ export default function PropertyOwners() {
             lineHeight: 1.8,
             color: "#243548",
             fontFamily: "Arial, sans-serif",
-            maxWidth: "760px",
-            margin: "0 auto",
+            maxWidth: "820px",
+            margin: "0 auto 40px",
           }}
         >
-          We maintain clear communication, structured occupancy, and consistent
-          oversight for every property we partner with.
+          We work with case managers, social workers, and community agencies
+          across Clark County.
         </p>
-
-        <h2
-          style={{
-            fontSize: "48px",
-            color: "#243548",
-            marginTop: "48px",
-            marginBottom: "20px",
-          }}
-        >
-          How We Maintain Your Property
-        </h2>
 
         <div
           style={{
-            lineHeight: 1.9,
-            maxWidth: "760px",
-            margin: "0 auto",
-            color: "#243548",
-            fontSize: "18px",
+            backgroundColor: "#ffffff",
+            padding: "70px 24px",
+            marginTop: "20px",
           }}
         >
-          <p>Structured occupancy with clear household expectations</p>
-          <p>Careful placement to ensure resident fit and consistency</p>
-          <p>Ongoing communication and oversight to maintain a stable environment</p>
+          <p
+            style={{
+              letterSpacing: "3px",
+              textTransform: "uppercase",
+              color: "#c89b3c",
+              marginBottom: "16px",
+              fontWeight: 600,
+            }}
+          >
+            Placement Process
+          </p>
+
+          <h2
+            style={{
+              fontSize: "56px",
+              lineHeight: 1.15,
+              color: "#243548",
+              marginBottom: "20px",
+            }}
+          >
+            A Simple and Structured Path to Placement
+          </h2>
+
+          <p
+            style={{
+              fontSize: "18px",
+              lineHeight: 1.8,
+              color: "#243548",
+              maxWidth: "850px",
+              margin: "0 auto 40px",
+              fontFamily: "Arial, sans-serif",
+            }}
+          >
+            Our goal is to ensure that each placement is an appropriate fit for
+            both the resident and the household environment. The following steps
+            outline our typical placement process.
+          </p>
+
+          <div
+            style={{
+              display: "grid",
+              gridTemplateColumns: "repeat(4, 1fr)",
+              gap: "28px",
+              maxWidth: "1100px",
+              margin: "0 auto",
+            }}
+          >
+            <div>
+              <h3 style={{ color: "#243548", marginBottom: "12px" }}>
+                1. Submit Placement Inquiry
+              </h3>
+              <p style={{ lineHeight: 1.7, color: "#243548" }}>
+                A referral partner or individual submits a placement inquiry for
+                housing consideration.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ color: "#243548", marginBottom: "12px" }}>
+                2. Application &amp; Screening Review
+              </h3>
+              <p style={{ lineHeight: 1.7, color: "#243548" }}>
+                We review the information provided to determine whether the
+                shared housing environment is an appropriate fit.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ color: "#243548", marginBottom: "12px" }}>
+                3. Approval &amp; Housing Match
+              </h3>
+              <p style={{ lineHeight: 1.7, color: "#243548" }}>
+                If appropriate, we follow up to discuss availability,
+                expectations, funding, and next-step placement details.
+              </p>
+            </div>
+
+            <div>
+              <h3 style={{ color: "#243548", marginBottom: "12px" }}>
+                4. Move-In Coordination
+              </h3>
+              <p style={{ lineHeight: 1.7, color: "#243548" }}>
+                Once approved, we coordinate move-in details and orientation to
+                the home guidelines and expectations.
+              </p>
+            </div>
+          </div>
         </div>
 
-        <div style={{ marginTop: "48px" }}>
+        <div style={{ marginTop: "60px" }}>
+          <p
+            style={{
+              letterSpacing: "3px",
+              textTransform: "uppercase",
+              color: "#c89b3c",
+              marginBottom: "16px",
+              fontWeight: 600,
+            }}
+          >
+            Referral Inquiry
+          </p>
+
           <h2
             style={{
               fontSize: "48px",
@@ -116,20 +186,21 @@ export default function PropertyOwners() {
               marginBottom: "20px",
             }}
           >
-            Partner With Us
+            Submit a Referral Inquiry
           </h2>
 
           <p
             style={{
               fontSize: "18px",
               lineHeight: 1.8,
-              maxWidth: "760px",
-              margin: "0 auto 20px",
               color: "#243548",
+              maxWidth: "760px",
+              margin: "0 auto 24px",
             }}
           >
-            If you are a property owner interested in working with us, submit your
-            information below and we will follow up within 24–48 hours.
+            If you are a case manager, agency representative, or referral
+            partner, complete the form below and we will follow up within 24–48
+            hours.
           </p>
 
           <form
@@ -142,12 +213,24 @@ export default function PropertyOwners() {
               gap: "12px",
             }}
           >
-            <input type="hidden" name="formType" value="Property Owner Inquiry" />
+            <input
+              type="hidden"
+              name="formType"
+              value="Referral Partner Inquiry"
+            />
 
             <input
               type="text"
-              name="fullName"
-              placeholder="Full Name"
+              name="organizationName"
+              placeholder="Agency or Organization Name"
+              required
+              style={inputStyle}
+            />
+
+            <input
+              type="text"
+              name="contactName"
+              placeholder="Contact Name"
               required
               style={inputStyle}
             />
@@ -167,29 +250,15 @@ export default function PropertyOwners() {
               style={inputStyle}
             />
 
-            <input
-              type="text"
-              name="propertyLocation"
-              placeholder="Property Location"
-              style={inputStyle}
-            />
-
-            <input
-              type="text"
-              name="propertyType"
-              placeholder="Property Type"
-              style={inputStyle}
-            />
-
             <textarea
-              name="message"
-              placeholder="Tell us a little about your property or partnership interest"
+              name="referralDetails"
+              placeholder="Briefly describe the referral need"
               rows={5}
               style={inputStyle}
             />
 
             <button type="submit" style={buttonStyle}>
-              Submit Inquiry
+              Submit Referral Inquiry
             </button>
           </form>
         </div>
