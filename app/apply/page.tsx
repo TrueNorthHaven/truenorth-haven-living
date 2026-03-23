@@ -20,6 +20,17 @@ export default function ApplyPage() {
             Complete the form below to begin the placement review process.
           </p>
 
+          <div style={{ marginBottom: "32px" }}>
+  <h2>What Happens Next</h2>
+  <p>
+    After submitting your application, our team will review your information and contact you within 24–48 hours to discuss next steps and availability.
+  </p>
+
+  <p>
+    Please provide accurate contact information and a clear description of your current situation.
+  </p>
+</div>
+
           <form
             action="https://formspree.io/f/xpqynyeg"
             method="POST"
