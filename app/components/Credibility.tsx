@@ -31,6 +31,16 @@ export default function Credibility() {
           <div>Referral-Friendly Communication</div>
           <div>Clean, Maintained Homes</div>
         </div>
+        
+        <h2 style={{ marginTop: "40px" }}>Our Process</h2>
+
+<ul style={{ listStyle: "none", padding: 0, lineHeight: 1.8 }}>
+  <li>All inquiries are reviewed before placement</li>
+  <li>We respond within 24–48 hours</li>
+  <li>Placement is based on fit and availability</li>
+  <li>We maintain structured house expectations</li>
+  <li>We communicate with referral partners throughout placement</li>
+</ul>
       </div>
     </section>
   );
