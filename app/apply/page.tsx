@@ -157,13 +157,12 @@ const textareaStyle = {
 };
 
 const buttonStyle = {
-  padding: "15px 24px",
-  backgroundColor: "#182434",
-  color: "#FFFFFF",
-  border: "none",
-  borderRadius: "8px",
+  padding: "14px 28px",
   fontSize: "16px",
-  fontWeight: 700,
+  backgroundColor: "#243548",
+  color: "#ffffff",
+  border: "none",
   cursor: "pointer",
-  fontFamily: "Arial, sans-serif",
+  borderRadius: "4px",
+  margin: "16px auto 0",
 };
