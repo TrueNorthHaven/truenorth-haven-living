@@ -132,7 +132,7 @@ export default function PropertyOwners() {
           </p>
 
           <form
-            action="https://formspree.io/f/xpqvnyeg"
+            action="https://formspree.io/f/xreydywb"
             method="POST"
             style={{
               maxWidth: "900px",
